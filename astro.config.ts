@@ -4,7 +4,8 @@ import AstroPureIntegration from 'astro-pure'
 import { defineConfig } from 'astro/config'
 import rehypeKatex from 'rehype-katex'
 import remarkMath from 'remark-math'
-import netlify from '@astrojs/netlify';
+//import netlify from '@astrojs/netlify';
+import cloudflare from '@astrojs/cloudflare'
 
 // Others
 // import { visualizer } from 'rollup-plugin-visualizer'
@@ -33,8 +34,8 @@ export default defineConfig({
   // Adapter
   // https://docs.astro.build/en/guides/deploy/
   // 1. Vercel (serverless)
-  adapter: netlify(),
   output: 'server',
+  adapter: cloudflare(),
   // 2. Vercel (static)
   // adapter: vercelStatic(),
   // 3. Local (standalone)
