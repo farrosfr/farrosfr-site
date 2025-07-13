@@ -38,8 +38,9 @@ html {
   --ring: 240 5.9% 10%;
   --radius: 0.5rem;
 }
-/* .dark {
-  --background: 240 20.54% 5.2%;
+.dark {
+  /* --background: 240 20.54% 5.2%; */
+  --background: 0 35% 10%; /* Merah Gelap */
   --foreground: 0 0% 98%;
   --card: 240 10% 3.9%;
   --card-foreground: 0 0% 98%;
@@ -58,51 +59,8 @@ html {
   --border: 240 3.7% 19.9%;
   --input: 240 3.7% 15.9%;
   --ring: 240 4.9% 83.9%;
-} */
- /* Ganti seluruh blok .dark di src/assets/styles/app.css */
-
-.dark {
-  /* Background utama menjadi merah sangat gelap */
-  --background: 0 30% 6%;
-
-  /* Warna Teks Utama */
-  --foreground: 0 0% 98%;
-
-  /* Warna untuk elemen 'Card' atau 'Box' */
-  --card: 0 25% 8%;
-  --card-foreground: 0 0% 98%;
-
-  /* Popover */
-  --popover: 0 25% 8%;
-  --popover-foreground: 0 0% 98%;
-
-  /* Warna Aksen/Primer (untuk link, tombol) */
-  --primary: 0 70% 80%; /* Merah muda terang agar kontras */
-  --primary-foreground: 0 50% 10%; /* Teks di atas warna primer */
-
-  /* Warna Sekunder */
-  --secondary: 0 20% 12%;
-  --secondary-foreground: 0 0% 98%;
-
-  /* Warna 'Muted' (untuk background & teks yang tidak menonjol) */
-  --muted: 0 20% 10%;
-  --muted-foreground: 0 5% 70%;
-
-  /* Warna 'Accent' */
-  --accent: 0 20% 12%;
-  --accent-foreground: 0 0% 98%;
-
-  /* Warna 'Destructive' (untuk notifikasi error, dll) */
-  --destructive: 0 62.8% 30.6%; /* Bisa dibiarkan default */
-  --destructive-foreground: 0 0% 98%;
-
-  /* Warna Garis/Batas */
-  --border: 0 20% 15%;
-
-  /* Input form */
-  --input: 0 20% 12%;
-  --ring: 0 70% 80%; /* Warna ring saat input di-fokus */
 }
+ /* Ganti seluruh blok .dark di src/assets/styles/app.css */
 :root {
   --un-default-border-color: hsl(var(--border) / 1);
 }
