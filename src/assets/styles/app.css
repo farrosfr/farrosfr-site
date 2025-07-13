@@ -39,9 +39,14 @@ html {
   --radius: 0.5rem;
 }
 .dark {
-  /* Using a deep blue-gray background for dark mode for optimal contrast and readability */
-  --background: 350 15% 10%;
-  /* --background: 240 20.54% 5.2%; */
+  /* Using a deep blue-gray background for dark mode for optimal contrast and readability.
+     The following commented-out background values are kept for quick theme experimentation:
+     - 350 15% 10%: alternative deep background
+     - 0 35% 10%: dark red background ("Merah Gelap")
+     Remove these if not needed for future reference.
+  */
+  /* --background: 350 15% 10%; */
+  --background: 240 20.54% 5.2%;
   /* --background: 0 35% 10%; Merah Gelap */
   --foreground: 0 0% 98%;
   --card: 240 10% 3.9%;
