@@ -24,8 +24,8 @@ export const theme: ThemeUserConfig = {
   },
   /** Set a logo image to show in the homepage. */
   logo: {
-    //src: 'src/assets/avatar.png',
-    src: 'src/assets/profile.jpg',
+    src: 'src/assets/avatar.png',
+    //src: 'src/assets/profile.jpg',
     alt: 'Avatar'
   },
 
@@ -148,7 +148,8 @@ export const integ: IntegrationUserConfig = {
   waline: {
     enable: true,
     // Server service link
-    server: 'https://astro-theme-pure-waline.arthals.ink/',
+    //server: 'https://astro-theme-pure-waline.arthals.ink/',
+    server: 'https://farrosfr-waline.vercel.app/',
     // Refer https://waline.js.org/en/guide/features/emoji.html
     emoji: ['bmoji', 'weibo'],
     // Refer https://waline.js.org/en/reference/client/props.html
