@@ -1,0 +1,7 @@
+[build]
+  command = "bun run build"
+  publish = "dist"
+
+[build.environment]
+  # Pastikan versi Node.js sesuai dengan yang didukung
+  NODE_VERSION = "18"
