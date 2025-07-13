@@ -24,7 +24,8 @@ export const theme: ThemeUserConfig = {
   },
   /** Set a logo image to show in the homepage. */
   logo: {
-    src: 'src/assets/avatar.png',
+    //src: 'src/assets/avatar.png',
+    src: 'src/assets/profile.jpg',
     alt: 'Avatar'
   },
 
@@ -48,7 +49,7 @@ export const theme: ThemeUserConfig = {
   header: {
     menu: [
       { title: 'Blog', link: '/blog' },
-      { title: 'Docs', link: '/docs' },
+      //{ title: 'Docs', link: '/docs' },
       { title: 'Projects', link: '/projects' },
       { title: 'Links', link: '/links' },
       { title: 'About', link: '/about' }
@@ -62,7 +63,7 @@ export const theme: ThemeUserConfig = {
     // year: `© 2019 - ${new Date().getFullYear()}`,
     links: [
       // Registration link
-      {
+      /*{
         title: 'Moe ICP 114514',
         link: 'https://icp.gov.moe/?keyword=114514',
         style: 'text-sm' // Uno/TW CSS class
@@ -71,7 +72,7 @@ export const theme: ThemeUserConfig = {
         title: 'Travelling',
         link: 'https://www.travellings.cn/go.html',
         style: 'text-sm'
-      },
+      },*/
       // Privacy Policy link
       {
         title: 'Site Policy',
@@ -109,8 +110,8 @@ export const integ: IntegrationUserConfig = {
     applyTip: [
       { name: 'Name', val: theme.title },
       { name: 'Desc', val: theme.description || 'Null' },
-      { name: 'Link', val: 'https://astro-pure.js.org/' },
-      { name: 'Avatar', val: 'https://astro-pure.js.org/favicon/favicon.ico' }
+      { name: 'Link', val: 'https://farrosfr.com' },
+      { name: 'Avatar', val: 'https://farrosfr.com/favicon/favicon.ico' }
     ]
   },
   // Enable page search function
