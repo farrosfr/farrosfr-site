@@ -1,7 +1,9 @@
 ---
 title: Building a Digital Library with JavaScript
 publishDate: '2024-09-03T07:28:56.194Z'
-description: Ringkasan singkat artikel tentang Building a Digital Library with JavaScript.
+description: >-
+  Building a Digital Library with JavaScript.
+tags: [JavaScript, OOP, Programming, Tutorial, Web Development]
 heroImage: {src: './image.png'}
 draft: false
 comment: true

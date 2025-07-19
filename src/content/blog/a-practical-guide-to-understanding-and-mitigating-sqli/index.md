@@ -2,8 +2,8 @@
 title: A Practical Guide to Understanding and Mitigating SQLi
 publishDate: '2025-01-02T02:48:26.443Z'
 description: >-
-  Ringkasan singkat artikel tentang A Practical Guide to Understanding and
-  Mitigating SQL Injection Risks.
+  A Practical Guide to Understanding and Mitigating SQL Injection Risks.
+tags: [SQLi, Cybersecurity, Web Security, Vulnerability, PHP]
 heroImage: { src: './image.png', color: '#223655' }
 draft: false
 comment: true

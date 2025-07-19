@@ -2,8 +2,8 @@
 title: Web Application Basics | TryHackMe Write-Up
 publishDate: '2025-03-22T00:39:10.588Z'
 description: >-
-  Ringkasan singkat artikel tentang Web Application Basics | TryHackMe |
-  Write-Up by FarrosFR.
+  Web Application Basics | TryHackMe | Write-Up by FarrosFR.
+tags: [Web Basics, TryHackMe, Write-up, HTTP, Networking]
 heroImage: {src: './image.png',color: '#371360'}
 draft: false
 comment: true

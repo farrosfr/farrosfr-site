@@ -1,9 +1,8 @@
 ---
 title: Memory Analysis Introduction | TryHackMe Write-Up
 publishDate: '2025-05-30T07:20:37.754Z'
-description: >-
-  Ringkasan singkat artikel tentang Memory Analysis Introduction | TryHackMe
-  Write-Up | FarrosFR.
+description: 'Memory Analysis Introduction | TryHackMe Write-Up | FarrosFR.'
+tags: [Memory Forensics, TryHackMe, Write-up, Cybersecurity, DFIR]
 heroImage: {src: './image.png', color: '#e6e6e6'}
 draft: false
 comment: true

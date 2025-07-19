@@ -2,8 +2,8 @@
 title: Principles of Security | TryHackMe Write-Up
 publishDate: '2025-04-29T05:20:19.889Z'
 description: >-
-  Ringkasan singkat artikel tentang Principles of Security | TryHackMe |
-  Write-Up by FarrosFR.
+  Principles of Security | TryHackMe | Write-Up by FarrosFR.
+tags: [Security Principles, TryHackMe, Write-up, CIA Triad, Cybersecurity]
 heroImage: {src: './image.png', color: '#ffdc00'}
 draft: false
 comment: true

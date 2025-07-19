@@ -2,8 +2,8 @@
 title: 'Aristotles Critique of Usury & The Natural Order'
 publishDate: '2024-08-25T02:54:18.551Z'
 description: >-
-  Ringkasan singkat artikel tentang Aristotle’s Critique of Usury: Money,
-  Justice, and the Natural Order.
+  Aristotle’s Critique of Usury: Money, Justice, and the Natural Order.
+tags: [Philosophy, Aristotle, Usury, Ethics, Finance]
 heroImage: {src: './image.png' }
 draft: false
 comment: true

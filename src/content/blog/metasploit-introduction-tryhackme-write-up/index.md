@@ -1,9 +1,8 @@
 ---
 title: 'Metasploit: Introduction | TryHackMe Write-Up'
 publishDate: '2025-04-30T15:30:00.129Z'
-description: >-
-  Ringkasan singkat artikel tentang Metasploit: Introduction | TryHackMe |
-  Write-Up by FarrosFR.
+description: 'Metasploit: Introduction | TryHackMe | Write-Up by FarrosFR.'
+tags: [Metasploit, TryHackMe, Write-up, Pentesting, Exploitation]
 heroImage: {src: './image.png', color: '#e6e6e6'}
 draft: false
 comment: true

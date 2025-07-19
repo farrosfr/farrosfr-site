@@ -1,8 +1,8 @@
 ---
 title: Mitigating Admin Login Bypass in Web Security
 publishDate: '2024-07-02T08:06:27.420Z'
-description: >-
-  Understanding and Mitigating Admin Login Bypass in Web Security.
+description: 'Understanding and Mitigating Admin Login Bypass in Web Security.'
+tags: [Web Security, Authentication, SQLi, Cybersecurity, Bypass]
 heroImage: {src: './image.png',color: '#d1edfe'}
 draft: false
 comment: true

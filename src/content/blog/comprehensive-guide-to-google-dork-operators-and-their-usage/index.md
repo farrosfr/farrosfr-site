@@ -2,8 +2,8 @@
 title: Comprehensive Guide to Google Dork Operators and Their Usage
 publishDate: '2024-10-17T10:19:25.345Z'
 description: >-
-  Ringkasan singkat artikel tentang Comprehensive Guide to Google Dork Operators
-  and Their Usage.
+  Comprehensive Guide to Google Dork Operators and Their Usage.
+tags: [Google Dorking, OSINT, Cybersecurity, SEO, Search]
 heroImage: {src: './image.png', color: '#bfc0bb'}
 draft: false
 comment: true

@@ -2,7 +2,8 @@
 title: 'DFIR: An Introduction | TryHackMe Write-Up'
 publishDate: '2025-05-27T06:39:58.213Z'
 description: >-
-  Ringkasan singkat artikel tentang DFIR: An Introduction | TryHackMe Write-Up
+  DFIR: An Introduction | TryHackMe Write-Up
+tags: [DFIR, TryHackMe, Write-up, Cybersecurity, Forensics]
 heroImage: {src: './image.png'}
 draft: false
 comment: true

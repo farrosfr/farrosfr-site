@@ -3,8 +3,8 @@ title: 'Enhancing Protection with Input Validation and
   Sanitization'
 publishDate: '2024-07-05T09:37:25.693Z'
 description: >-
-  Ringkasan singkat artikel tentang JSO Vulnerabilities: Enhancing Protection
-  with Input Validation and Sanitization.
+  JSO Vulnerabilities: Enhancing Protection with Input Validation and Sanitization.
+tags: [XSS, Cybersecurity, Web Security, Input Validation, Flask]
 heroImage: {src: './image.png',color: '#56c152'}
 draft: false
 comment: true

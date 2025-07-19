@@ -1,9 +1,8 @@
 ---
 title: 'Jr Security Analyst Intro | TryHackMe Write-Up'
 publishDate: '2025-05-16T19:47:49.883Z'
-description: >-
-  Ringkasan singkat artikel tentang Jr Security Analyst Intro | TryHackMe |
-  Write-Up by FarrosFR.
+description: 'Jr Security Analyst Intro | TryHackMe | Write-Up by FarrosFR.'
+tags: [SOC, TryHackMe, Write-up, Cybersecurity, Security Analyst]
 heroImage: {src: './image.png',color: '#05c7d5'}
 draft: false
 comment: true

@@ -1,7 +1,9 @@
 ---
 title: 'Financial Mathematics: Interest and Usury'
 publishDate: '2024-10-25T02:49:59.679Z'
-description: 'Ringkasan singkat artikel tentang Financial Mathematics: Interest and Usury.'
+description: >-
+  'Financial Mathematics: Interest and Usury.'
+tags: [Finance, Mathematics, Usury, Interest, Ethics]
 heroImage: {src: './image.png'}
 draft: false
 comment: true

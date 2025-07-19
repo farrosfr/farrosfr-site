@@ -2,8 +2,8 @@
 title: 'OpenAI JavaScript API: Building a Recipe Blog'
 publishDate: '2024-08-30T09:12:07.391Z'
 description: >-
-  Ringkasan singkat artikel tentang OpenAI JavaScript API: Building a Recipe
-  Blog.
+  OpenAI JavaScript API: Building a Recipe Blog.
+tags: [OpenAI, JavaScript, API, Generative AI, Web Development]
 heroImage: {src: './image.png',color: '#211e2f'}
 draft: false
 comment: true

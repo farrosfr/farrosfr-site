@@ -1,9 +1,8 @@
 ---
 title: 'Learning Cyber Security | TryHackMe Write-Up'
 publishDate: '2025-05-01T16:38:34.821Z'
-description: >-
-  Ringkasan singkat artikel tentang Learning Cyber Security | TryHackMe
-  Write-Up
+description: 'Learning Cyber Security | TryHackMe Write-Up'
+tags: [TryHackMe, Write-up, Cybersecurity, Beginner, Learning]
 heroImage: { src: './image.png', color: '#d0cfca'}
 draft: false
 comment: true

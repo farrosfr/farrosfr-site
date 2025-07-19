@@ -3,8 +3,8 @@ title: >-
   Comparison Between Edging and Relapse in Addiction
 publishDate: '2024-07-31T04:04:10.989Z'
 description: >-
-  Ringkasan singkat artikel tentang Comparison Between Edging and Relapse in the
-  Context of Addiction: Which Is More Damaging?.
+  Comparison Between Edging and Relapse in the Context of Addiction: Which Is More Damaging?.
+tags: [Addiction, Psychology, Self-Help, Mental Health, Discipline]
 heroImage: {src: './image.png'}
 draft: false
 comment: true

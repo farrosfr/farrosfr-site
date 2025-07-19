@@ -1,73 +1,47 @@
-# Astro Theme Pure
 
-[English](./README.md) | [简体中文](./README-zh-CN.md)
 
-A simple, fast and powerful blog theme built by Astro.
+# FarrosFR Website Repository
 
-[![GitHub deployments](https://img.shields.io/github/deployments/cworld1/astro-theme-pure/production?style=flat&logo=vercel&label=vercel)](https://astro-pure.js.org/)
-[![NPM Version](https://img.shields.io/npm/v/astro-pure?logo=npm&style=flat)](https://www.npmjs.com/package/astro-pure)
-[![GitHub Release](https://img.shields.io/github/v/release/cworld1/astro-theme-pure?include_prereleases&style=flat&label=template)](https://github.com/cworld1/astro-theme-pure/releases)
-[![GitHub License](https://img.shields.io/github/license/cworld1/astro-theme-pure?style=flat)](https://github.com/cworld1/astro-theme-pure/blob/main/LICENSE)
+This is the official repository for my personal website, [farrosfr.com](https://farrosfr.com). This site serves as my personal blog where I write about Offensive Cybersecurity, Pentesting, and Bug Bounties.
 
-![image](./.github/assets/header.webp)
-![image](./.github/assets/body.webp)
+## Tech Stack & Specifications
 
-> [!WARNING]
-> Theme template v4.0.2^ CSS engine changed to UnoCSS. Stabler version is [v4.0.1-beta](https://github.com/cworld1/astro-theme-pure/tree/v4.0.1-beta). Known issues:
->
-> 1. Header & customize options is still under development (template exposed still)
+My website is built with performance and simplicity in mind, utilizing modern web development technologies. Here’s a breakdown of the technical specifications:
 
-## Introduction
+  * **Architecture**: **Jamstack**. This site is built using the Jamstack architecture, ensuring it is fast, secure, and scalable by serving pre-rendered static files.
+  * **Framework**: **Astro**. I use the Astro framework to build the site. Astro allows me to build content-focused websites that load quickly by shipping zero JavaScript by default.
+  * **Theme**: **Astro Theme Pure**. The look and feel of the site are based on the [Astro Theme Pure](https://github.com/cworld1/astro-theme-pure), a simple, clean, and powerful blog theme. It comes with a great set of features out-of-the-box.
+  * **Hosting**: **Netlify**. The website is deployed and hosted on Netlify, which provides a seamless continuous integration and deployment (CI/CD) pipeline directly from this GitHub repository.
 
-Checkout [Demo Site →](https://astro-pure.js.org/)
+### Key Features
 
-### :fire: Features
+  - 🚀 **Fast & High Performance**: Optimized for speed with Astro's static site generation.
+  - ⭐ **Simple & Clean Design**: A minimalist design to keep the focus on the content.
+  - 📱 **Responsive Design**: Looks great on both desktop and mobile devices.
+  - 🔍 **Full-Site Search**: Powered by [Pagefind](https://pagefind.app/) for efficient client-side search.
+  - 🗺️ **Sitemap & RSS Feed**: For better SEO and content syndication.
+  - 📖 **Table of Contents (TOC)**: Automatically generated for longer articles to improve navigation.
 
-- [x] :rocket: Fast & high performance
-- [x] :star: Simple & clean design
-- [x] :iphone: Responsive design
-- [x] :mag: Full-site search built with [pagefind](https://pagefind.app/)
-- [x] :world_map: Sitemap & RSS feed
-- [x] :spider_web: SEO-friendly
-- [x] :book: TOC (table of contents)
-- [x] :framed_picture: Dynamic open graph generation for posts
-- [x] :framed_picture: Mediumzoom lightbox for images
+## Using This Theme
 
-### :package: Components
+If you like the theme and structure of this website, you are more than welcome to use it for your own project. This repository is based on the **Astro Theme Pure**, which you can find and fork from its original repository. It’s a great starting point for building your own personal blog with Astro.
 
-Theme includes a lot of components, which can not only be used in the theme, but also in other astro projects.
+Feel free to explore the code, and if you have any questions, don't hesitate to open an issue.
 
-> For other astro projects, UnoCSS is required.
+## Local Development
 
-- Basic components: `Aside`, `Tabs`, `Timeline`, `Steps`, `Spoiler`...
-- Advanced components: `GithubCard`, `LinkPreview`, `Quote`, `QRCode`...
+To run this project locally, you'll need:
 
-### :white_check_mark: Lighthouse score
+  - [Node.js](https://nodejs.org/): 18.0.0+
 
-[![lighthouse-score](./.github/assets/lighthouse-score.png)](https://pagespeed.web.dev/analysis/https-cworld-top/o229zrt5o4?form_factor=mobile&hl=en)
-
-## Documentation
-
-[Docs](https://astro-pure.js.org/docs) | [Showcase](https://github.com/cworld1/astro-theme-pure/issues/10)
-
-## Package
-
-See [astro-theme-pure](https://www.npmjs.com/package/astro-pure) on npm.
-
-## Local development
-
-Environment requirements:
-
-- [Nodejs](https://nodejs.org/): 18.0.0+
-
-Clone the repository:
+First, clone the repository:
 
 ```shell
-git clone https://github.com/cworld1/astro-theme-pure.git
-cd astro-theme-pure
+git clone https://github.com/farrosfr/farrosfr-site.git
+cd farrosfr-site
 ```
 
-Useful commands:
+Then, use these commands to get started:
 
 ```shell
 # install dependencies
@@ -81,23 +55,8 @@ bun run build
 
 # preview (after the build)
 bun preview
-
-# create a new post
-bun new-post
 ```
-
-## Contributions
-
-To spend more time coding and less time fiddling with whitespace, this project uses code conventions and styles to encourage consistency. Code with a consistent style is easier (and less error-prone!) to review, maintain, and understand.
-
-## Thanks
-
-- [Astro Cactus](https://github.com/chrismwilliams/astro-theme-cactus)
-- [Astro Resume](https://github.com/srleom/astro-theme-resume)
-- [Starlight](https://github.com/withastro/starlight)
 
 ## License
 
 This project is licensed under the Apache 2.0 License.
-
-[![Star History Chart](https://api.star-history.com/svg?repos=cworld1/astro-theme-pure&type=Date)](https://star-history.com/#cworld1/astro-theme-pure&Date)

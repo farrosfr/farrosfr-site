@@ -2,8 +2,8 @@
 title: Prevent SQLi with Validators and Prepared Statements
 publishDate: '2024-09-12T08:39:41.988Z'
 description: >-
-  Ringkasan singkat artikel tentang How to Prevent SQL Injection Attacks with
-  Validators and Prepared Statements in Backend Code.
+  How to Prevent SQL Injection Attacks with Validators and Prepared Statements in Backend Code.
+tags: [SQLi, Node.js, Cybersecurity, Web Security, Programming]
 heroImage: {src: './image.png',color: '#ffffff'}
 draft: false
 comment: true

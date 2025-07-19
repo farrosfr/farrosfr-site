@@ -2,9 +2,8 @@
 title: Combining ParamSpider and Dalfox in Kali Linux
 publishDate: '2024-07-01T03:40:19.201Z'
 description: >-
-  Ringkasan singkat artikel tentang Combining ParamSpider and Dalfox in Kali
-  Linux for Enhanced Security Testing.
-tags: [Kali Linux,Cybersecurity,Ethical Hacking,Paramspider,Dalfox]
+  Combining ParamSpider and Dalfox in Kali Linux for Enhanced Security Testing.
+tags: [Kali Linux, Cybersecurity, Ethical Hacking, Paramspider, Dalfox]
 heroImage: { src: './image.png', color: '#2e73a8' }
 draft: false
 comment: true

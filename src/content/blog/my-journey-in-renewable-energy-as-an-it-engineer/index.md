@@ -2,8 +2,8 @@
 title: 'My Journey in Renewable Energy as an IT Engineer'
 publishDate: '2025-04-10T07:28:08.983Z'
 description: >-
-  Ringkasan singkat artikel tentang Empowering Growth with SonusHUB: My Journey
-  in Renewable Energy as an IT Engineer.
+  Empowering Growth with SonusHUB: My Journey in Renewable Energy as an IT Engineer.
+tags: [Renewable Energy, IT, Career, Indonesia, E-commerce]
 heroImage: {src: './image.png',color: '#ffffff'}
 draft: false
 comment: true

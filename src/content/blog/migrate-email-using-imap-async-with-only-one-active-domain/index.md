@@ -1,9 +1,8 @@
 ---
 title: Migrate Email Using IMAP Async with Only One Active Domain
 publishDate: '2024-11-20T05:04:18.694Z'
-description: >-
-  Ringkasan singkat artikel tentang How to Migrate Email Using IMAP Async with
-  Only One Active Domain.
+description: 'How to Migrate Email Using IMAP Async with Only One Active Domain.'
+tags: [Email Migration, IMAP, SysAdmin, Hosting, Tutorial]
 heroImage: {src: './image.png',color: '#f6f7fc'}
 draft: false
 comment: true

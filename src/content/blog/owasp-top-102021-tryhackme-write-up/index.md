@@ -2,8 +2,8 @@
 title: OWASP Top 10–2021 | TryHackMe Write-up 
 publishDate: '2025-03-30T16:32:56.133Z'
 description: >-
-  Ringkasan singkat artikel tentang OWASP Top 10–2021 | TryHackMe | Write-up by
-  FarrosFR.
+  OWASP Top 10–2021 | TryHackMe | Write-up by FarrosFR.
+tags: [OWASP, TryHackMe, Write-up, Web Security, Vulnerability]
 heroImage: {src: './image.png',color: '#ffffff'}
 draft: false
 comment: true

@@ -2,8 +2,8 @@
 title: Easily Reveal Your Wi-Fi Password in Windows with CMD
 publishDate: '2025-03-28T03:23:03.921Z'
 description: >-
-  Ringkasan singkat artikel tentang Easily Reveal Your Wi-Fi Password in Windows
-  with CMD.
+  Easily Reveal Your Wi-Fi Password in Windows with CMD.
+tags: [Windows, CMD, WiFi, Password, Tutorial]
 heroImage: {src: './image.png',color: '#f0f0f0'}
 draft: false
 comment: true
