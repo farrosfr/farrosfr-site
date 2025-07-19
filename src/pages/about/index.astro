@@ -1,41 +1,68 @@
 ---
 import { Comment } from 'astro-pure/advanced'
-import { Button, Collapse, Spoiler, Timeline } from 'astro-pure/user'
+import { Button, Collapse, Spoiler, Timeline, Icon } from 'astro-pure/user'
 import PageLayout from '@/layouts/CommonPage.astro'
 import Substats from '@/components/about/Substats.astro'
 import ToolSection from '@/components/about/ToolSection.astro'
 
 const headings = [
+  { depth: 2, slug: 'about-me', text: 'About Me' },
+  { depth: 2, slug: 'my-motto', text: 'My Motto' },
   { depth: 2, slug: 'hobbies', text: 'Hobbies' },
-  { depth: 2, slug: 'tools', text: 'Tools' },
+  { depth: 2, slug: 'my-tech-stack', text: 'My Tech Stack' },
+  { depth: 2, slug: 'offensive-security-tools', text: 'Offensive Security Tools' },
+  //{ depth: 2, slug: 'gossips', text: 'Gossips' },
   { depth: 2, slug: 'social-networks', text: 'Social Networks' },
-  { depth: 2, slug: 'gossips', text: 'Gossips' },
-  { depth: 2, slug: 'about-blog', text: 'About Blog' }
+  { depth: 2, slug: 'about-this-blog', text: 'About Blog' }
 ]
 ---
 
-<PageLayout title='About' {headings} info='/about'>
-  <p>Offensive Security Enthusiast / Bug Bounty Hunter</p>
-  <p>
-    Exploring vulnerabilities and securing digital assets. My focus is on penetration testing, ethical hacking, and sharing my findings.
+<PageLayout title='About' {headings} info={{ slug: '/about', hideComment: false }}>
+   <p>
+    I am a Web Developer and a passionate Security Enthusiast with a strong focus on the offensive side.
   </p>
   <p>
-    My motto: May the eyes of cowards never sleep. 
-    <!-- <Spoiler>这里可以夹私货，比如为什么要演奏春日影！</Spoiler> -->
+    In web development, I specialize in building robust solutions using WordPress and modern Jamstack architecture. In cybersecurity, my main interests are penetration testing, ethical hacking, and discovering vulnerabilities. I enjoy sharing my findings and knowledge through this blog.
   </p>
   <Button title='Sponsor Me' class='w-fit' href='/projects#sponsorship' style='ahead' />
+
+  <h2 id='my-motto'>My Motto</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8 not-prose">
+    
+    <blockquote class="border border-border p-6 rounded-lg text-center flex flex-col h-full bg-card shadow-sm">
+      <svg class="w-8 h-8 text-muted-foreground/30 mx-auto mb-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+          <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+      </svg>
+      <p class="text-lg italic text-foreground flex-grow">
+        "May the eyes of cowards never sleep."
+      </p>
+      <footer class="mt-4 text-sm text-muted-foreground">
+        - Khalid bin Walid RA
+      </footer>
+    </blockquote>
+    
+    <blockquote class="border border-border p-6 rounded-lg text-center flex flex-col h-full bg-card shadow-sm">
+      <svg class="w-8 h-8 text-muted-foreground/30 mx-auto mb-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+          <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+      </svg>
+      <p class="text-lg italic text-foreground flex-grow">
+        "I see that these people know nothing about war."
+      </p>
+      <footer class="mt-4 text-sm text-muted-foreground">
+        - Khalid bin Walid RA
+      </footer>
+    </blockquote>
+
+  </div>
 
   {/* general-talk */}
   <h2 id='hobbies'>Hobbies</h2>
   <ul>
-    <li>Shadow Boxing</li>
-    <!-- <li>
-      Quem denique mea id. Usu ei regione indoctum dissentiunt, cu meliore fuisset mei, vel quod
-      voluptua ne.
+    <li>
+      <strong>Shadow Boxing:</strong> I enjoy the training and discipline of boxing, but I'm not a fan of competitive matches due to the inherent risks, especially blows to the head which can be fatal. For me, it's about fitness and technique.
     </li>
-    <li>Ex dicat impedit mel, at eum oratio possit voluptatum.</li>
-    <li>Impetus fuisset ullamcorper pri cu, his posse iisque ad, aliquam honestatis usu id.</li> -->
   </ul>
+
 
   {/* tools */}
   <h2 id='tools'>Tools</h2>
@@ -156,7 +183,7 @@ const headings = [
   />
 
   {/* social-networks */}
-  <h2 id='social-networks'>Social Networks</h2>
+  <!-- <h2 id='social-networks'>Social Networks</h2>
   <p>
     Lorem ipsum dolor sit amet, vidit suscipit at mei. Quem denique mea id. Usu ei regione indoctum
     dissentiunt, cu meliore fuisset mei, vel quod voluptua ne.
@@ -219,7 +246,27 @@ const headings = [
         api: 'twitter/farrosfr_'
       }
     ]}
-  />
+  /> -->
+
+  <h2 id='social-networks'>Social Networks</h2>
+  <p>You can find me on the following platforms. Let's connect!</p>
+    <div class="flex flex-wrap gap-4 my-4">
+        <a href="https://github.com/farrosfr" target="_blank" class="flex items-center gap-2">
+            <Icon name="github" class="size-6" /> GitHub
+        </a>
+        <a href="https://x.com/farrosfr_" target="_blank" class="flex items-center gap-2">
+            <Icon name="x" class="size-6" /> X (Twitter)
+        </a>
+        <a href="https://www.linkedin.com/in/farrosfr/" target="_blank" class="flex items-center gap-2">
+            <Icon name="rss" class="size-6" /> LinkedIn
+        </a>
+        <a href="https://t.me/farrosfr" target="_blank" class="flex items-center gap-2">
+            <Icon name="telegram" class="size-6" /> Telegram
+        </a>
+        <a href="https://instagram.com/farrosfr" target="_blank" class="flex items-center gap-2">
+            <Icon name="instagram" class="size-6" /> Instagram
+        </a>
+    </div>
 
   <!-- {/* gossips */}
   <h2 id='gossips'>Gossips</h2>
@@ -229,7 +276,7 @@ const headings = [
     possit voluptatum.
   </Collapse> -->
 
-  {/* about-blog */}
+  <!-- {/* about-blog */}
   <h2 id='about-blog'>About Blog</h2>
   <p>Website history:</p>
   <Timeline
@@ -267,9 +314,9 @@ const headings = [
     </li>
     <li>
       CI/CD: <a href='https://vercel.com/workflow' target='_blank'>Vercel Workflow</a>
-    </li>
+    </li> -->
     <!-- <li>Resources speedup: <a href='https://cdn.cbd.int/' target='_blank'>CBD CDN</a></li> -->
-    <li>Comment system: <a href='https://waline.js.org' target='_blank'>Waline</a></li>
+    <!-- <li>Comment system: <a href='https://waline.js.org' target='_blank'>Waline</a></li>
     <li>
       Visits: <a href='https://supabase.com/' target='_blank'>Supabase</a> +
       <a href='https://waline.js.org/' target='_blank'>Waline</a>
@@ -279,6 +326,32 @@ const headings = [
         >Substats</a
       >
     </li>
+  </ul> -->
+
+  <h2 id='about-this-blog'>About This Blog</h2>
+  <p>This blog is a platform for me to document my journey, share insights, and post write-ups. For a detailed history of this site's development, you can view the commit history on GitHub.</p>
+  {/* FIX: Menambahkan href langsung ke komponen Button */}
+  <Button 
+    title='View Commit History' 
+    class='w-fit' 
+    href="https://github.com/farrosfr/farrosfr-site/commits/main/" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+  />
+  <p class="mt-4">
+    This website is built with the support of these amazing open-source projects and services:
+  </p>
+  <ul>
+    <li>
+      Framework & Theme: <a href='https://astro.build/' target='_blank'>Astro</a> + <a
+        href='https://github.com/cworld1/astro-theme-pure'
+        target='_blank'>Astro Theme Pure</a>
+    </li>
+    <li>
+      Site hosting & CI/CD: <a href='https://netlify.com/' target='_blank'>Netlify</a>
+    </li>
+    <li>Comment system: <a href='https://waline.js.org' target='_blank'>Waline</a></li>
   </ul>
+
   <Comment slot='bottom' />
 </PageLayout>
