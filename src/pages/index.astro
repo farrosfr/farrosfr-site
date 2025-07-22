@@ -1,7 +1,6 @@
 ---
 import { Image } from 'astro:assets'
 
-import { Quote } from 'astro-pure/advanced'
 import { PostPreview } from 'astro-pure/components/pages'
 import { getBlogCollection, sortMDByDate } from 'astro-pure/server'
 import { Button, Card, Icon, Label } from 'astro-pure/user'
@@ -12,9 +11,9 @@ import SkillLayout from '@/components/home/SkillLayout.astro'
 import avatar from '@/assets/avatar.png'
 import config from '@/site-config'
 
-const languages = ['Html', 'JavaScript', 'CSS', 'Shell']
-const frontend = ['TypeScript', 'Vite', 'Webpack', 'Astro']
-const backend = ['Vercel', 'Waline']
+const languages = ['Html', 'JavaScript', 'CSS', 'Shell', 'Python', 'Java', 'PHP', 'SQL']
+const frontend = ['TypeScript', 'Astro']
+const backend = ['Netlify', 'Waline', 'Node.js', 'MongoDB', 'MySQL', 'PostgreSQL']
 
 const MAX_POSTS = 10
 const allPosts = await getBlogCollection()
@@ -47,28 +46,13 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
           </Label>
         </div>
       </div>
-
-      {/* Get template */}
-      <!-- <a
-        href='https://github.com/cworld1/astro-theme-pure'
-        target='_blank'
-        class='flex flex-row items-center gap-x-3 rounded-full border bg-background px-4 py-2 text-sm shadow-sm transition-shadow hover:shadow-md'
-      >
-        <span class='relative flex items-center justify-center'>
-          <span
-            class='absolute size-2 animate-ping rounded-full border border-green-400 bg-green-400 opacity-75'
-          ></span>
-          <span class='size-2 rounded-full bg-green-400'></span>
-        </span>
-        <p class='font-medium text-muted-foreground'>Get Template</p>
-      </a> -->
     </section>
 
     <div id='content' class='animate flex flex-col gap-y-10 md:w-4/5 lg:w-5/6'>
       <Section title='About'>
-        <p class='text-muted-foreground'>Offensive Security Enthusiast / Bug Bounty Hunter</p>
+        <p class='text-muted-foreground'>Web Developer / Security Enthusiast</p>
         <p class='text-muted-foreground'>
-          Exploring vulnerabilities and securing digital assets. My focus is on penetration testing, ethical hacking, and sharing my findings. "May the eyes of cowards never sleep."
+          I am a Web Developer and a passionate Security Enthusiast with a strong focus on the offensive side.
         </p>
         <Button title='More about me' class='w-fit self-end' href='/about' style='ahead' />
       </Section>
@@ -87,53 +71,35 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
         )
       }
 
-      {
-        /* <Section title='Experience'>
-      <Card
-        heading='Lorem Ipsum'
-        subheading='Sit amet consectetur'
-        date='Dec 2022 - Nov 2023'
-        imagePath='/src/assets/about-astro.png'
-        altText='Lorem, ipsum dolor sit'
-        imageClass='h-12 w-auto md:-start-16'
-      >
-        <ul class='ms-4 list-disc text-muted-foreground'>
-          <li>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis recusandae, ut
-            molestiae laboriosam pariatur!
-
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur!</li>
-          </li>
-        </ul>
-      </Card>
-      <Card
-        heading='Lorem Ipsum'
-        subheading='Sit amet consectetur'
-        date='Dec 2022 - Nov 2023'
-        imagePath='/src/assets/about-astro.png'
-        altText='Lorem, ipsum dolor sit'
-        imageClass='h-12 w-auto md:-start-16'
-      />
-    </Section> */
-      }
       <Section title='Education'>
         <Card
           as='a'
           heading='Statistics'
           subheading='Sepuluh Nopember Institute of Technology'
-          date='August 2015 - September 2019'
+          date='Aug 2015 - Sep 2019'
           href='https://www.neliti.com/publications/323506/topic-discovery-pada-dokumen-abstrak-jurnal-penelitian-di-science-direct-menggun'
-        >
-          {
-            /* <ul class='ms-4 list-disc text-muted-foreground'>
-          <li>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis recusandae, ut
-            molestiae laboriosam pariatur!
-          </li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur!</li>
-        </ul> */
-          }
-        </Card>
+        />
+        <Card
+          as='a'
+          heading='Internet of Things Bootcamp'
+          subheading='Digital Talent Schoolarship Kominfo'
+          date='Jun - Aug 2019'
+          href='https://drive.google.com/file/d/11KEiT6UmrAZd1SQkL3ePOyR_4T0An4vz/view'
+          target='_blank'
+        />
+        <Card
+          heading='Enterprise Full-Stack Developer Bootcamp'
+          subheading='Praxis Academy'
+          date='Oct 2019'
+        />
+        <Card
+          as='a'
+          heading='Data Engineering Bootcamp'
+          subheading='Multipolar Technology'
+          date='Oct - Nov 2019'
+          href='https://drive.google.com/file/d/1-tJgXTy3M-zeZoFtbZ98pEhDWkKs9PEA/view'
+          target='_blank'
+        />
       </Section>
 
       <Section title='Website List'>
@@ -168,10 +134,51 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
       <Section title='Certifications'>
         <Card
           as='a'
-          heading='Pre Security Certificate'
+          heading='Azure Fundamental (AZ-900)'
+          subheading='Microsoft'
+          date='Jan 2022'
+          href='https://learn.microsoft.com/id-id/users/farrosfr/credentials/a05b92e878c7edd9?ref=https%3A%2F%2Fwww.linkedin.com%2F'
+          target='_blank'
+        />
+        <Card
+          as='a'
+          heading='Responsive Web Design'
+          subheading='freeCodeCamp'
+          date='Mar 2024'
+          href='https://www.freecodecamp.org/certification/farrosfr/responsive-web-design'
+          target='_blank'
+        />
+        <Card
+          as='a'
+          heading='Introduction to Information Security'
+          subheading='Cyber Academy Indonesia'
+          date='Mar 2024'
+          href='https://www.cyberacademy.id/certificate/PKMI01103240785'
+          target='_blank'
+        />
+        <Card
+          as='a'
+          heading='Introduction to Cybersecurity'
+          subheading='Cisco'
+          date='Jan 2025'
+          href='https://www.netacad.com/certificates?issuanceId=a26328ab-abab-403d-80c1-c0be6232eb83'
+          target='_blank'
+        />
+        <Card
+          as='a'
+          heading='Cybersecurity for Small and Medium Size Business'
+          subheading='EC-Council'
+          date='Jan 2025'
+          href='https://codered.eccouncil.org/certificate/20752b60-d52d-47d5-b72b-e55a33d48ab0'
+          target='_blank'
+        />
+        <Card
+          as='a'
+          heading='Introduction to Cyber Security Certificate'
           subheading='TryHackMe'
-          date='January 2025'
-          href='https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-OA1PBQOMP7.pdf'
+          date='Feb 2025'
+          href='https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-QRGNXAUUOF.pdf'
+          target='_blank'
         />
       </Section>
 
@@ -181,6 +188,5 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
         <SkillLayout title='Backend' skills={backend} />
       </Section>
     </div>
-    <Quote class='mt-12' />
-  </main>
+    </main>
 </PageLayout>

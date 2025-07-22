@@ -64,7 +64,7 @@ const headings = [
   </ul>
 
 
-  {/* tools */}
+  <!-- {/* tools */}
   <h2 id='tools'>Tools</h2>
   <p>Current support tools as follow:</p>
   <ToolSection
@@ -180,7 +180,87 @@ const headings = [
         icon: import('@/assets/tools/windows11.svg?raw')
       }
     ]}
+  /> -->
+
+  <h2 id='my-tech-stack'>My Tech Stack</h2>
+  <p>Here are the tools and technologies I use daily:</p>
+  <ToolSection
+    class='mb-5'
+    title='Design'
+    tools={[
+      {
+        name: 'Canva',
+        description: 'Graphic Design',
+        href: 'https://www.canva.com/',
+        icon: import('@/assets/tools/canva.svg?raw') // Pastikan Anda memiliki ikon canva.svg di folder assets/tools
+      }
+    ]}
   />
+  <ToolSection
+    class='mb-5'
+    title='Productivity'
+    tools={[
+      {
+        name: 'Google Chrome',
+        description: 'Web Browser',
+        href: 'https://www.google.com/chrome/',
+        icon: import('@/assets/tools/chrome.svg?raw')
+      },
+      {
+        name: 'Google Sheets',
+        description: 'Spreadsheet',
+        href: 'https://www.google.com/sheets/about/',
+        icon: import('@/assets/tools/google-sheets.svg?raw') // Pastikan Anda memiliki ikon google-sheets.svg
+      },
+      {
+        name: 'Gemini Pro',
+        description: 'AI Assistant',
+        href: 'https://gemini.google.com/',
+        icon: import('@/assets/tools/gemini.svg?raw') // Pastikan Anda memiliki ikon gemini.svg
+      }
+    ]}
+  />
+  <ToolSection
+    class='mb-5'
+    title='Development'
+    tools={[
+      {
+        name: 'VS Code',
+        description: 'Code Editor',
+        href: 'https://code.visualstudio.com/',
+        icon: import('@/assets/tools/vscode.svg?raw')
+      }
+    ]}
+  />
+  <ToolSection
+    class='mb-5'
+    title='Environment'
+    tools={[
+      {
+        name: 'Windows 11',
+        description: 'Operating System',
+        href: 'https://www.microsoft.com/windows/windows-11',
+        icon: import('@/assets/tools/windows11.svg?raw')
+      },
+      {
+        name: 'Kali Linux',
+        description: 'Penetration Testing Distro',
+        href: 'https://www.kali.org/',
+        icon: import('@/assets/tools/kali-linux.svg?raw') // Pastikan Anda memiliki ikon kali-linux.svg
+      }
+    ]}
+  />
+
+  <h2 id='offensive-security-tools'>Offensive Security Tools</h2>
+  <p>My go-to toolkit for security assessments includes:</p>
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-4 not-prose my-5">
+    <span>- Metasploit</span>
+    <span>- Burp Suite</span>
+    <span>- Wireshark</span>
+    <span>- WPScan</span>
+    <span>- Nmap</span>
+    <span>- and more...</span>
+  </div>
 
   {/* social-networks */}
   <!-- <h2 id='social-networks'>Social Networks</h2>
