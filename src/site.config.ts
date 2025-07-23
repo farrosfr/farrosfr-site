@@ -36,16 +36,16 @@ export const theme: ThemeUserConfig = {
   npmCDN: 'https://cdn.jsdelivr.net/npm',
 
   // Still in test
-  head: [
-    {
-      tag: 'meta',
-      attrs: { property: 'og:image', content: '/images/avatar.png' }
-    },
-    {
-      tag: 'meta',
-      attrs: { name: 'twitter:image', content: '/images/avatar.png' }
-    }
-  ],
+  // head: [
+  //   {
+  //     tag: 'meta',
+  //     attrs: { property: 'og:image', content: '/images/avatar.png' }
+  //   },
+  //   {
+  //     tag: 'meta',
+  //     attrs: { name: 'twitter:image', content: '/images/avatar.png' }
+  //   }
+  // ],
 
   customCss: [],
 
