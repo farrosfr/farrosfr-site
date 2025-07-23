@@ -9,6 +9,7 @@ export const theme: ThemeUserConfig = {
   /** Description metadata for your website. Can be used in page metadata. */
   description: 'Blog about Offensive Cybersecurity, Pentesting, dan Bug Bounty.',
   /** The default favicon for your site which should be a path to an image in the `public/` directory. */
+
   favicon: '/favicon/favicon.ico',
   /** Specify the default language for this site. */
   locale: {
@@ -36,13 +37,16 @@ export const theme: ThemeUserConfig = {
 
   // Still in test
   head: [
-    /* Telegram channel */
-    // {
-    //   tag: 'meta',
-    //   attrs: { name: 'telegram:channel', content: '@cworld0_cn' },
-    //   content: ''
-    // }
+    {
+      tag: 'meta',
+      attrs: { property: 'og:image', content: '/images/avatar.png' }
+    },
+    {
+      tag: 'meta',
+      attrs: { name: 'twitter:image', content: '/images/avatar.png' }
+    }
   ],
+
   customCss: [],
 
   /** Configure the header of your site. */
