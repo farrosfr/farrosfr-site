@@ -5,8 +5,7 @@ description: >-
   DFIR: An Introduction | TryHackMe Write-Up
 tags: [DFIR, TryHackMe, Write-up, Cybersecurity, Forensics]
 heroImage: {src: './image.png'}
-draft: false
-comment: true
+language: 'en'
 ---
 * * *
 

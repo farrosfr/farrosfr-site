@@ -6,8 +6,7 @@ description: >-
   JSO Vulnerabilities: Enhancing Protection with Input Validation and Sanitization.
 tags: [XSS, Cybersecurity, Web Security, Input Validation, Flask]
 heroImage: {src: './image.png',color: '#56c152'}
-draft: false
-comment: true
+language: 'en'
 ---
 
 In today’s digital age, web security has become a paramount concern for developers and webmasters alike. One of the notable cases in web security involves the methods of Contributor With JSO or XSS (index path), which exploit the functionalities of a website through the creation of user accounts that can then inject harmful scripts.

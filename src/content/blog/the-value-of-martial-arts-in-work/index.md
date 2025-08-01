@@ -5,8 +5,7 @@ description: >-
   The Value of Martial Arts in Work.
 tags: [Martial Arts, Work, Health, Mental, Honesty]
 heroImage: {src: './image.png', color: '#627e8d'}
-draft: false
-comment: true
+language: 'en'
 ---
 I have studied several martial arts disciplines. Starting from Karate, Pagar Nusa, Wushu, to Boxing (self-taught). There are many values emphasized there, one of which is the teaching of being a humble person.
 

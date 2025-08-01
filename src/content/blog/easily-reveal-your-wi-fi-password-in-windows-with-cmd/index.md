@@ -5,8 +5,7 @@ description: >-
   Easily Reveal Your Wi-Fi Password in Windows with CMD.
 tags: [Windows, CMD, WiFi, Password, Tutorial]
 heroImage: {src: './image.png',color: '#f0f0f0'}
-draft: false
-comment: true
+language: 'en'
 ---
 * * *
 

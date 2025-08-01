@@ -5,8 +5,7 @@ description: >-
   How to Prevent SQL Injection Attacks with Validators and Prepared Statements in Backend Code.
 tags: [SQLi, Node.js, Cybersecurity, Web Security, Programming]
 heroImage: {src: './image.png',color: '#ffffff'}
-draft: false
-comment: true
+language: 'en'
 ---
 SQL injection attacks remain one of the most prevalent and dangerous security vulnerabilities in web applications. These attacks allow malicious users to manipulate database queries, potentially compromising sensitive data or altering system functionality. This article discusses the methods to secure your web applications against such threats by incorporating input validation and prepared statements. Using Codey Confectionery, a simple web application as an example, we will demonstrate how these techniques can effectively protect your backend code from SQL injection attempts.
 

@@ -5,8 +5,7 @@ description: >-
   'Financial Mathematics: Interest and Usury.'
 tags: [Finance, Mathematics, Usury, Interest, Ethics]
 heroImage: {src: './image.png'}
-draft: false
-comment: true
+language: 'en'
 ---
 My experience as a student in the Bachelor of Statistics department who took a financial mathematics class has opened up my awareness and insight into how the modern financial system works.
 

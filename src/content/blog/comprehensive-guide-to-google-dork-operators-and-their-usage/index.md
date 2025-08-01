@@ -5,8 +5,7 @@ description: >-
   Comprehensive Guide to Google Dork Operators and Their Usage.
 tags: [Google Dorking, OSINT, Cybersecurity, SEO, Search]
 heroImage: {src: './image.png', color: '#bfc0bb'}
-draft: false
-comment: true
+language: 'en'
 ---
 ## Introduction
 

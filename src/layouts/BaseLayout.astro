@@ -8,19 +8,25 @@ import config from '@/site-config'
 // all pages through the use of the <BaseLayout /> component.
 import '@/assets/styles/app.css'
 
+// 1. Definisikan bahwa komponen ini bisa menerima 'language'
 interface Props {
   meta: SiteMeta
   highlightColor?: string
+  language?: string // Prop untuk bahasa
 }
 
 const {
   meta: { articleDate, description = config.description, ogImage, title },
   highlightColor,
+  // 2. Ambil 'language'. Jika tidak ada, pakai default dari config
+  language = config.locale.lang,
   ...props
 } = Astro.props
----
 
-<html lang={config.locale.lang}>
+//3. Gunakan variabel 'language' yang dinamis, BUKAN dari config lagi
+//<html lang={config.locale.lang}>
+---
+<html lang={language}>
   <head>
     <BaseHead {articleDate} {description} {ogImage} {title} />
     <ThemeProvider />

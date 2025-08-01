@@ -5,8 +5,7 @@ description: >-
   Aristotle’s Critique of Usury: Money, Justice, and the Natural Order.
 tags: [Philosophy, Aristotle, Usury, Ethics, Finance]
 heroImage: {src: './image.png' }
-draft: false
-comment: true
+language: 'en'
 ---
 * * *
 In the modern era, the concept of charging interest on loans known as usury has become a standard aspect of financial systems worldwide. Banks, credit card companies, and lenders routinely charge interest as a means of generating profit. However, if we delve into the philosophical traditions of ancient Greece, we find a profound critique of this practice, particularly from one of history’s greatest thinkers: Aristotle. His views on usury offer a timeless reflection on the ethics of money, justice, and the natural order.

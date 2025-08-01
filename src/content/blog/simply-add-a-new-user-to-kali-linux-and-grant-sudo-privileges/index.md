@@ -5,8 +5,7 @@ description: >-
   How to Simply Add a New User to Kali Linux and Grant Sudo Privileges | FarrosFR.
 tags: [Kali Linux, Linux, User Management, Sudo, Tutorial]
 heroImage: {src: './image.png',color: '#acacad'}
-draft: false
-comment: true
+language: 'en'
 ---
 * * *
 

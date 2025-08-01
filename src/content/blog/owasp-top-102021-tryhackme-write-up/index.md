@@ -5,8 +5,7 @@ description: >-
   OWASP Top 10–2021 | TryHackMe | Write-up by FarrosFR.
 tags: [OWASP, TryHackMe, Write-up, Web Security, Vulnerability]
 heroImage: {src: './image.png',color: '#ffffff'}
-draft: false
-comment: true
+language: 'en'
 ---
 Here is my article on the walkthrough of free room for [TryHackMe: OWASP TOP 10 - 2021](https://tryhackme.com/room/owasptop102021), which is the final section of the [Web Hacking](https://tryhackme.com/module/web-hacking) module.I wrote this in 2025 and hope it is useful for learning about OWASP TOP 10
 

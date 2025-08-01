@@ -4,8 +4,7 @@ publishDate: '2025-05-16T19:47:49.883Z'
 description: 'Jr Security Analyst Intro | TryHackMe | Write-Up by FarrosFR.'
 tags: [SOC, TryHackMe, Write-up, Cybersecurity, Security Analyst]
 heroImage: {src: './image.png',color: '#05c7d5'}
-draft: false
-comment: true
+language: 'en'
 ---
 Here is my article on the walkthrough of a free room: [Junior Security Analyst Intro](https://tryhackme.com/room/jrsecanalystintrouxo). Play through a day in the life of a Junior Security Analyst, their responsibilities and qualifications needed to land a role as an analyst. I wrote this in 2025 and hope it is useful for learning about security analyst.
 

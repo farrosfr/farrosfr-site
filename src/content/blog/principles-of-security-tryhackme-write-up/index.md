@@ -5,8 +5,7 @@ description: >-
   Principles of Security | TryHackMe | Write-Up by FarrosFR.
 tags: [Security Principles, TryHackMe, Write-up, CIA Triad, Cybersecurity]
 heroImage: {src: './image.png', color: '#ffdc00'}
-draft: false
-comment: true
+language: 'en'
 ---
 Here is my article on the walkthrough room for [TryHackMe: Principles of Security](https://tryhackme.com/room/principlesofsecurity), I wrote this in 2025 and hope it is useful for learning about principle of security.
 

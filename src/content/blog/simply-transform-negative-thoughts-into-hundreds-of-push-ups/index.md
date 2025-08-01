@@ -5,8 +5,7 @@ description: >-
   How to Simply Transform Your Negative Thoughts into Hundreds of Push-ups | FarrosFR.
 tags: [Mental Health, Fitness, Self-Help, Productivity, Discipline]
 heroImage: {src: './image.png',color: '#fffcfc'}
-draft: false
-comment: true
+language: 'en'
 ---
 Here, I want to share my daily solution for managing stress and other negative thoughts, such as sadness, boredom, and more. Furthermore, it can help build your muscles and self-discipline for free.
 

@@ -4,8 +4,7 @@ publishDate: '2024-11-20T05:04:18.694Z'
 description: 'How to Migrate Email Using IMAP Async with Only One Active Domain.'
 tags: [Email Migration, IMAP, SysAdmin, Hosting, Tutorial]
 heroImage: {src: './image.png',color: '#f6f7fc'}
-draft: false
-comment: true
+language: 'en'
 ---
 * * *
 Here, I would like to share my experience of migrating the company’s email hosting. Previously, we subscribed to email hosting through [emailkerja.id](http://emailkerja.id) service. This service was quite good and affordable because it only limited storage capacity to 69 GB, but it provided unlimited domains and mailboxes. This allowed us to add multiple domains and mailboxes as long as the storage capacity was sufficient.

@@ -4,7 +4,7 @@ description: 'Anti-Usury'
 publishDate: 2023-09-16 00:00:01
 tags: ['Usury', 'Data','Business','Work','Fair']
 heroImage: { src: './image.png', color: '#64574D' }
-language: 'English'
+language: 'en'
 ---
 
 In this captivating journey, I transitioned from being a data engineer and trusted ally of bank executives to becoming a change agent dedicated to promoting ethical financial practices. Recognizing the detrimental impact of usury, which is condemned by various religions, including Christianity, Judaism, and Islam, I chose to redirect my skills towards a greater purpose.

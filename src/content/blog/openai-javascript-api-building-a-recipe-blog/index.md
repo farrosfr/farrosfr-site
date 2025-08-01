@@ -5,8 +5,7 @@ description: >-
   OpenAI JavaScript API: Building a Recipe Blog.
 tags: [OpenAI, JavaScript, API, Generative AI, Web Development]
 heroImage: {src: './image.png',color: '#211e2f'}
-draft: false
-comment: true
+language: 'en'
 ---
 * * *
 In this project, we’ll build a recipe generator that provides tailored recipe recommendations by providing the model with context about our dietary preferences, ingredients on hand, and cuisine favorites. We’ll practice prompt engineering to format the model output recipes in the best format for our blog.

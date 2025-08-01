@@ -6,8 +6,7 @@ description: >-
   Comparison Between Edging and Relapse in the Context of Addiction: Which Is More Damaging?.
 tags: [Addiction, Psychology, Self-Help, Mental Health, Discipline]
 heroImage: {src: './image.png'}
-draft: false
-comment: true
+language: 'en'
 ---
 In the realm of addiction, two concepts frequently arise as significant topics: edging and relapse. Both terms, despite their differences, have destructive impacts. This article will explain the differences between edging and relapse and why both can be dangerous in the context of addiction.
 

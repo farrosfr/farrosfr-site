@@ -4,8 +4,7 @@ publishDate: '2025-05-01T16:38:34.821Z'
 description: 'Learning Cyber Security | TryHackMe Write-Up'
 tags: [TryHackMe, Write-up, Cybersecurity, Beginner, Learning]
 heroImage: { src: './image.png', color: '#d0cfca'}
-draft: false
-comment: true
+language: 'en'
 ---
 Here’s my walkthrough article of a free room for [Learning Cyber Security](https://tryhackme.com/room/beginnerpathintro). It provides a brief introduction to several key security topics you’ll explore. Written in 2025, I hope it serves as a helpful on your cybersecurity learning journey.
 

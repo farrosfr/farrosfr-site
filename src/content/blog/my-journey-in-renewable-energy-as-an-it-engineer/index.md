@@ -5,8 +5,7 @@ description: >-
   Empowering Growth with SonusHUB: My Journey in Renewable Energy as an IT Engineer.
 tags: [Renewable Energy, IT, Career, Indonesia, E-commerce]
 heroImage: {src: './image.png',color: '#ffffff'}
-draft: false
-comment: true
+language: 'en'
 ---
 In this article, I want to write a story about my experience working in a renewable energy company as an IT engineer in my country, Indonesia. Especially, I work in Yogyakarta, a city that attracts many tourists from various countries because it is near the Borobudur Temple, a UNESCO World Heritage Site.
 

@@ -5,8 +5,7 @@ description: >-
   A Practical Guide to Understanding and Mitigating SQL Injection Risks.
 tags: [SQLi, Cybersecurity, Web Security, Vulnerability, PHP]
 heroImage: { src: './image.png', color: '#223655' }
-draft: false
-comment: true
+language: 'en'
 ---
 ## Introduction
 

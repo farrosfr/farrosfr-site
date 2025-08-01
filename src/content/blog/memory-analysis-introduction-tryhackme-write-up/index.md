@@ -4,8 +4,7 @@ publishDate: '2025-05-30T07:20:37.754Z'
 description: 'Memory Analysis Introduction | TryHackMe Write-Up | FarrosFR.'
 tags: [Memory Forensics, TryHackMe, Write-up, Cybersecurity, DFIR]
 heroImage: {src: './image.png', color: '#e6e6e6'}
-draft: false
-comment: true
+language: 'en'
 ---
 * * *
 Here is my article on the walkthrough of a free room: [Memory Analysis Introduction](https://tryhackme.com/room/memoryanalysisintroduction). Learn how memory analysis helps detect threats during live investigations. I wrote this in 2025 and hope it is useful for learning about memory analysis.

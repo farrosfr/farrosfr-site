@@ -5,8 +5,7 @@ description: >-
   Web Application Basics | TryHackMe | Write-Up by FarrosFR.
 tags: [Web Basics, TryHackMe, Write-up, HTTP, Networking]
 heroImage: {src: './image.png',color: '#371360'}
-draft: false
-comment: true
+language: 'en'
 ---
 Here is my writing about one of the rooms on TryHackMe, specifically [Web Application Basics](https://tryhackme.com/room/webapplicationbasics), which is part of the [Web Hacking](https://tryhackme.com/module/web-hacking) module. I will also explain how to complete the CTF in task number 10.
 

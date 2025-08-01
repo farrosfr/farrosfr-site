@@ -5,8 +5,7 @@ description: >-
   Building a Digital Library with JavaScript.
 tags: [JavaScript, OOP, Programming, Tutorial, Web Development]
 heroImage: {src: './image.png'}
-draft: false
-comment: true
+language: 'en'
 ---
 Creating a digital library using JavaScript offers an excellent way to practice object-oriented programming and understand the principles of classes and inheritance. In this guide, we will build a versatile library system that manages books, movies, and CDs, allowing you to enhance your JavaScript skills while constructing a dynamic, extensible application.
 
