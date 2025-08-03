@@ -8,8 +8,11 @@ language: 'en'
 ---
 Photo by <a href="https://unsplash.com/@growtika?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Growtika</a> on <a href="https://unsplash.com/photos/graphical-user-interface-qaedPly-Uro?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
-***
-      
+---      
+- GitHub Repository: [farrosfr/js-gradebook-app](https://github.com/farrosfr/js-gradebook-app)
+- Live Demo: [Try the Gradebook App Here](https://farrosfr.github.io/js-gradebook-app/)
+---
+
 I want to share an article about creating a simple "Gradebook App." This project is inspired by the "Review JavaScript Fundamentals" section of the freeCodeCamp curriculum.
 
 The goal is to create a user input for a numerical score. The app will then calculate the letter grade, compare it to the class average, and show a pass/fail message.
