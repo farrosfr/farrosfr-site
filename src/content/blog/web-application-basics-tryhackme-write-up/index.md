@@ -133,7 +133,7 @@ Q1: Make a **GET** request to `/api/users`. What is the flag?
 
 THM Browser
 
-> THM{YOU\_HAVE\_JUST\_FOUND\_THE\_USER\_LIST}
+> THM{YOUHAVEJUSTFOUNDTHEUSERLIST}
 
 Q2: Make a **POST** request to `/api/user/2` and update the **country** of Bob from **UK** to **US**. What is the flag?
 
@@ -147,7 +147,7 @@ Parameters
 
 **POST** request to `/api/user/2`
 
-> THM{YOU\_HAVE\_MODIFIED\_THE\_USER\_DATA}
+> THM{YOUHAVEMODIFIEDTHEUSERDATA}
 
 Make a **DELETE** request to `/api/user/1` to delete the user. What is the flag?
 
@@ -155,7 +155,7 @@ Make a **DELETE** request to `/api/user/1` to delete the user. What is the flag?
 
 **DELETE** request to `/api/user/1`
 
-> YOU\_HAVE\_JUST\_DELETED\_A\_USER
+> YOUHAVEJUSTDELETEDAUSER
 
 ## Task 11: Conclusion
 

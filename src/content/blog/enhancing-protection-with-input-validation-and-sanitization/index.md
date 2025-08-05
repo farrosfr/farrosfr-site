@@ -28,7 +28,7 @@ XSS stands for Cross Site Scripting. This type of attack involves injecting mali
 
 For instance, an XSS attack could be as simple as:
 
-`<script\>alert('XSS');</script\>`
+`<script>alert('XSS');</script>`
 
 This script would execute an alert box displaying “XSS” on the user’s screen, demonstrating the website’s vulnerability to script injection.
 
@@ -45,22 +45,22 @@ One practical example involves a simple web application created with Flask, a Py
 from flask import Flask, request, escape  
 
 ``` js 
-app = Flask(\_\_name\_\_)  
+app = Flask(name)  
   
-@app.route('/submit\_comment', methods=\['POST'\])  
-def submit\_comment():  
-    user\_comment = request.form\['comment'\]  
-    \# Input sanitization  
-    safe\_comment = escape(user\_comment)  
-    \# Save the sanitized comment  
-    save\_comment(safe\_comment)  
+@app.route('/submitcomment', methods=['POST'])  
+def submitcomment():  
+    usercomment = request.form['comment']  
+    # Input sanitization  
+    safecomment = escape(usercomment)  
+    # Save the sanitized comment  
+    savecomment(safecomment)  
     return "Your comment has been safely stored!"  
   
-def save\_comment(comment):  
-    \# Function to save the comment to a database or file  
+def savecomment(comment):  
+    # Function to save the comment to a database or file  
     pass  
   
-if \_\_name\_\_ == '\_\_main\_\_':  
+if name == 'main':  
     app.run()
 ```
 

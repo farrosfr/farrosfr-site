@@ -53,7 +53,7 @@ These components help security professionals perform penetration tests and asses
 
 > singles
 
-**Q4: Is “windows/x64/pingback\_reverse\_tcp” among singles or staged payload?**
+**Q4: Is “windows/x64/pingbackreversetcp” among singles or staged payload?**
 
 > singles
 
@@ -71,9 +71,9 @@ I try to ran the msfconsole in Kali Linux.
 
 > search apache
 
-**Q2**: Who provided the auxiliary/scanner/ssh/ssh\_login module?
+**Q2**: Who provided the auxiliary/scanner/ssh/sshlogin module?
 
-You can run this script to find out who provided the information for auxiliary/scanner/ssh/ssh\_login
+You can run this script to find out who provided the information for auxiliary/scanner/ssh/sshlogin
 
 `info auxiliary/scanner/ssh/ssh_login`
 

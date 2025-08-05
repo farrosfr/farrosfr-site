@@ -25,9 +25,9 @@ Next, add a constructor to the `Media` class that accepts one parameter, `title`
 ```js
 class Media {  
   constructor(title) {  
-    this.\_title = title;  
-    this.\_isCheckedOut = false;  
-    this.\_ratings = \[\];  
+    this.title = title;  
+    this.isCheckedOut = false;  
+    this.ratings = \[\];  
   }  
 }
 ```
@@ -37,19 +37,19 @@ We need to create getter methods for the `title`, `isCheckedOut`, and `ratings` 
 ```js
 class Media {  
   constructor(title) {  
-    this.\_title = title;  
-    this.\_isCheckedOut = false;  
-    this.\_ratings = \[\];  
+    this.title = title;  
+    this.isCheckedOut = false;  
+    this.ratings = \[\];  
   }  
   
   get title() {  
-    return this.\_title;  
+    return this.title;  
   }  
   get isCheckedOut() {  
-    return this.\_isCheckedOut;  
+    return this.isCheckedOut;  
   }  
   get ratings() {  
-    return this.\_ratings;  
+    return this.ratings;  
   }  
 }
 ```
@@ -58,68 +58,68 @@ class Media {
 We should also provide a setter for the `isCheckedOut` property to allow its value to be modified.
 ```js
 set isCheckedOut(value) {  
-  this.\_isCheckedOut = value;  
+  this.isCheckedOut = value;  
 }
 ```
 ## Step 5: Create `Media` Methods
 
 Add methods to `Media` for managing the `isCheckedOut` status, calculating the average rating, and adding new ratings.
 
-*   `toggleCheckOutStatus` **Method:** This method toggles the value of `_isCheckedOut`.
+*   `toggleCheckOutStatus` **Method:** This method toggles the value of `isCheckedOut`.
 ```js
 toggleCheckOutStatus() {  
-  this.\_isCheckedOut = !this.\_isCheckedOut;  
+  this.isCheckedOut = !this.isCheckedOut;  
 }
 ```
 *   `getAverageRating` **Method:** This method calculates the average of the ratings in the `ratings` array.
 ```js
 getAverageRating() {  
-  const ratingsSum = this.\_ratings.reduce((currentSum, rating) => currentSum + rating, 0);  
-  return ratingsSum / this.\_ratings.length;  
+  const ratingsSum = this.ratings.reduce((currentSum, rating) => currentSum + rating, 0);  
+  return ratingsSum / this.ratings.length;  
 }
 ```
 *   `AddRating` **Method:** This method adds a new rating to the `ratings` array.
 ```js
 addRating(rating) {  
-  this.\_ratings.push(rating);  
+  this.ratings.push(rating);  
 }
 ```
 Here is a full code view of the media class above:
 ```js
 class Media {  
   constructor(title) {  
-    this.\_title = title;  
-    this.\_isCheckedOut = false;  
-    this.\_ratings = \[\];  
+    this.title = title;  
+    this.isCheckedOut = false;  
+    this.ratings = \[\];  
   }  
   
   get title() {  
-    return this.\_title;  
+    return this.title;  
   }  
   
   get isCheckedOut() {  
-    return this.\_isCheckedOut;  
+    return this.isCheckedOut;  
   }  
   
   get ratings() {  
-    return this.\_ratings;  
+    return this.ratings;  
   }  
   
   set isCheckedOut(value) {  
-    this.\_isCheckedOut = value;  
+    this.isCheckedOut = value;  
   }  
   
   toggleCheckOutStatus() {  
-    this.\_isCheckedOut = !this.\_isCheckedOut;  
+    this.isCheckedOut = !this.isCheckedOut;  
   }  
   
   getAverageRating() {  
-    const ratingsSum = this.\_ratings.reduce((currentSum, rating) => currentSum + rating, 0);  
-    return ratingsSum / this.\_ratings.length;  
+    const ratingsSum = this.ratings.reduce((currentSum, rating) => currentSum + rating, 0);  
+    return ratingsSum / this.ratings.length;  
   }  
   
   addRating(rating) {  
-    this.\_ratings.push(rating);  
+    this.ratings.push(rating);  
   }  
 }
 ```
@@ -130,15 +130,15 @@ Now, create a `Book` class that extends the `Media` class, inheriting its proper
 class Book extends Media {  
   constructor(author, title, pages) {  
     super(title);  
-    this.\_author = author;  
-    this.\_pages = pages;  
+    this.author = author;  
+    this.pages = pages;  
   }  
     
   get author() {  
-    return this.\_author;  
+    return this.author;  
   }  
   get pages() {  
-    return this.\_pages;  
+    return this.pages;  
   }  
 }
 ```
@@ -149,15 +149,15 @@ Similarly, create a `Movie` class that extends `Media`:
 class Movie extends Media {  
   constructor(director, title, runTime) {  
     super(title);  
-    this.\_director = director;  
-    this.\_runTime = runTime;  
+    this.director = director;  
+    this.runTime = runTime;  
   }  
   
   get director() {  
-    return this.\_director;  
+    return this.director;  
   }  
   get runTime() {  
-    return this.\_runTime;  
+    return this.runTime;  
   }  
 }
 

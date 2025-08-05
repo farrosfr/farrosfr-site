@@ -51,7 +51,7 @@ To access these machines, you need to either:
 
 > No answer needed
 
-**Deploy the machine and go to** [**http://MACHINE\_IP**](http://machine_ip/) **— Login with the username noot and the password test1234.**
+**Deploy the machine and go to** [**http://MACHINEIP**](http://machine_ip/) **— Login with the username noot and the password test1234.**
 
 ![](https://cdn-images-1.medium.com/max/800/1*HkL2UpVZpeBHZNNm86tREw.png)
 
@@ -61,7 +61,7 @@ THM Note Server
 
 **Q1: Look at other users’ notes. What is the flag?**
 
-Change the note\_id from 1 to 0.
+Change the noteid from 1 to 0.
 
 ![](https://cdn-images-1.medium.com/max/800/1*ZmAmlKZckfCBXfuJiwKn3Q.png)
 
@@ -115,7 +115,7 @@ We found this note from the developer with green-colored text.
 
 **Q2: Navigate to the directory you found in question one. What file stands out as being likely to contain sensitive data?**
 
-We are going to the path [https://MACHINE\_IP:81/assets](https://machine-ip:81/assets).
+We are going to the path [https://MACHINEIP:81/assets](https://machine-ip:81/assets).
 
 ![](https://cdn-images-1.medium.com/max/800/1*CW6WwPYr41UAOPsvd4AdXA.png)
 
@@ -164,13 +164,13 @@ Flag
 
 ## Task 10: 3.1. Command Injection
 
-To complete the questions below, navigate to [http://MACHINE\_IP:82/](http://10.10.46.122:82/) and exploit the cowsay server.
+To complete the questions below, navigate to [http://MACHINEIP:82/](http://10.10.46.122:82/) and exploit the cowsay server.
 
 **Q1: What strange text file is in the website’s root directory?**
 
 ![](https://cdn-images-1.medium.com/max/800/1*XlpjEWk_6e4dKn6h77JxFQ.png)
 
-[http://MACHINE\_IP:82](http://MACHINE_IP:82/)
+[http://MACHINEIP:82](http://MACHINE_IP:82/)
 
 Try to run the script `$(ls)` that can generate the URL path `[http://MACHINE_IP:82/?cow=default&mooing=%24%28ls%29](http://MACHINE_IP:82/?cow=default&mooing=%24%28ls%29)`
 
@@ -248,11 +248,11 @@ We can try logging in after that and search for the flag
 
 ![](https://cdn-images-1.medium.com/max/800/1*5Bo2NHNnxvGIuwUnGd78Fg.png)
 
-> THM{Not\_3ven\_c4tz\_c0uld\_sav3\_U!}
+> THM{Not3venc4tzc0uldsav3U!}
 
 ## Task 12: 5. Security Misconfiguration
 
-**Navigate to** [**http://MACHINE\_IP:86/console**](http://10.10.6.94:86/console) **to access the Werkzeug console.**
+**Navigate to** [**http://MACHINEIP:86/console**](http://10.10.6.94:86/console) **to access the Werkzeug console.**
 
 ![](https://cdn-images-1.medium.com/max/800/1*1pVq7eVopcbZo-u639Rj1g.png)
 
@@ -278,7 +278,7 @@ ls -l
 
 cat app.py
 
-> THM{Just\_a\_tiny\_misconfiguration}
+> THM{Justatinymisconfiguration}
 
 ## Task 13: 6. Vulnerable and Outdated Components
 
@@ -310,7 +310,7 @@ Try running the script file `47887.py` with the command `python3 47887.py http:/
 
 ![](https://cdn-images-1.medium.com/max/800/1*as-FKA2I_cNf6Shvwkm6gQ.png)
 
-> THM{But\_1ts\_n0t\_my\_f4ult!}
+> THM{But1tsn0tmyf4ult!}
 
 ## Task 16: 7. Identification and Authentication Failures
 
@@ -372,7 +372,7 @@ Open the website [srihash.org](https://www.srihash.org/) and then encrypt the gi
 
 ![](https://cdn-images-1.medium.com/max/800/1*DJRdTF_RwQgExeXZDVicog.png)
 
-MACHINE\_IP:8089
+MACHINEIP:8089
 
 Try to log in with the username: guest
 
@@ -417,7 +417,7 @@ Finally, concatenate them using a period (`.`) delimiter to form the following v
 
 ![](https://cdn-images-1.medium.com/max/800/1*eacJn-pEQ5FC0qProQv72w.png)
 
-> THM{Dont\_take\_cookies\_from\_strangers}
+> THM{Donttakecookiesfromstrangers}
 
 ## Task 21: 9. Security Logging and Monitoring Failures
 
@@ -475,7 +475,7 @@ Then, check the terminal for the listener and capture the flag.
 
 Flag
 
-> THM{Hello\_Im\_just\_an\_API\_key}
+> THM{HelloImjustanAPIkey}
 
 **Q4: Going the Extra Mile:** There’s a way to use SSRF to gain access to the site’s admin area. Can you find it?
 

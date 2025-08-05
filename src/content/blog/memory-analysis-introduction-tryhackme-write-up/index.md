@@ -199,7 +199,7 @@ Malicious code is injected into legitimate processes
 
 **Q1**: What is the value of the flag?
 
-THM(\*\*\*\*\*\*\_\*\*\*\*\*\*\_\*\*\*\*\_\*\*\*)
+THM(\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*)
 
 ## Task 6: Conclusion
 
