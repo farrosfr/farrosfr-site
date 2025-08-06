@@ -145,7 +145,7 @@ class Book extends Media {
 ## Step 7: Create the `Movie` Class
 
 Similarly, create a `Movie` class that extends `Media`:
-
+```js
 class Movie extends Media {  
   constructor(director, title, runTime) {  
     super(title);  
@@ -160,11 +160,11 @@ class Movie extends Media {
     return this.runTime;  
   }  
 }
-
+```
 ## Step 8: Testing the `Book` Class
 
 Let’s create an instance of the `Book` class and test its functionality.
-
+```js
 const historyOfEverything = new Book('Bill Bryson', 'A Short History of Nearly Everything', 544);  
 historyOfEverything.toggleCheckOutStatus();  
 console.log(historyOfEverything.isCheckedOut); // Logs true  
@@ -173,9 +173,9 @@ historyOfEverything.addRating(4);
 historyOfEverything.addRating(5);  
 historyOfEverything.addRating(5);  
 console.log(historyOfEverything.getAverageRating()); // Logs 4.67
-
+```
 ## Step 9: Testing the `Movie` Class
-
+```js
 Next, create an instance of the `Movie` class and test its methods.
 
 const speed = new Movie('Jan de Bont', 'Speed', 116);  
@@ -186,16 +186,16 @@ speed.addRating(1);
 speed.addRating(1);  
 speed.addRating(5);  
 console.log(speed.getAverageRating()); // Logs 2.33
-
+```
 ### Additional Challenges
 
 To further enhance this digital library, consider implementing the following:
 
 *   **Add more properties:** For example, add a `movieCast` property to `Movie` or a `songTitles` property to `CD`.
-*   **Create a** `**CD**` **class:** Extend `Media` and include properties like `artist`, `songs`, etc.
+*   **Create a** `CD` **class:** Extend `Media` and include properties like `artist`, `songs`, etc.
 *   **Validate ratings:** Ensure `addRating()` only accepts values between 1 and 5.
 *   **Implement a shuffle method:** Create a `shuffle` method in the `CD` class to return a randomly sorted array of songs.
-*   **Create a** `**Catalog**` **class:** This class could manage all `Media` items in the library.
+*   **Create a** `Catalog` **class:** This class could manage all `Media` items in the library.
 
 These tasks will help you deepen your understanding of JavaScript classes and inheritance while enhancing the functionality of your digital library.
 
