@@ -93,7 +93,7 @@ Then, reorder everything again in ascending time, and you will get the flag. Con
 
 **Q2**: Complete the timeline creation exercise in the attached static site. What is the flag that you get after completion?
 
-THM(\*\*\*\*\*\*\*\*\*\*\*\*\*)
+THM(*************)
 
 ## Task 4: DFIR Tools
 

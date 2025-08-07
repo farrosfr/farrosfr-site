@@ -33,7 +33,7 @@ Clone the ParamSpider repository from GitHub, navigate into the directory, and i
 cd ParamSpider  
 pip install .`
 
-Once the installation is complete, you can start using ParamSpider to find URLs with parameters. For demonstration, we’ll scan the example domain \`example.com\`:
+Once the installation is complete, you can start using ParamSpider to find URLs with parameters. For demonstration, we’ll scan the example domain `example.com`:
 
 paramspider -d example.com
 

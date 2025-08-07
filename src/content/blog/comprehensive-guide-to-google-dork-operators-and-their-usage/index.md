@@ -30,7 +30,7 @@ Google Dorking is a powerful technique that allows users to perform better and m
 
 These are just a few of the many ways Google Dorks can be utilized. While these techniques are highly beneficial for cybersecurity audits, SEO professionals, and many others.
 
-## 1\. URL-Based Operators: intitle, allintitle, inurl, and allinurl
+## 1. URL-Based Operators: intitle, allintitle, inurl, and allinurl
 
 These operators are used to locate specific information within URLs or page titles. They play an essential role in filtering results effectively.
 
@@ -75,7 +75,7 @@ The `link:` operator shows pages that link to a specific webpage or domain. This
     This query will return pages that contain links pointing to `example.com`.
 *   **Usage:** Useful for backlink analysis or identifying referring domains.
 
-## 2\. File Type Operators: filetype and Specific File Formats
+## 2. File Type Operators: filetype and Specific File Formats
 
 The `filetype:` operator is extremely valuable for retrieving specific types of documents, such as PDFs or Excel files, from the web. Below are the commonly used file types.
 
@@ -105,7 +105,7 @@ The `site:` operator is indispensable for narrowing down search results to a spe
 `site:example.com "SEO"`  
 This search shows all pages on `example.com` that mention the term "SEO".
 
-## 3\. Text-Based Search Operators: `allintext:` and `inanchor:`
+## 3. Text-Based Search Operators: `allintext:` and `inanchor:`
 
 ### `allintext:` – Search for Specific Text on a Page
 
@@ -123,7 +123,7 @@ Anchor text search is valuable in **backlink analysis**. It finds pages that lin
 `inanchor:"best SEO tools"`  
 This query returns pages linking to sites with "best SEO tools" as the anchor text.
 
-## 4\. Search by Numbers and Date: `numrange:` and `daterange:`
+## 4. Search by Numbers and Date: `numrange:` and `daterange:`
 
 ### `numrange:` – Locate Numerical Ranges
 
@@ -152,7 +152,7 @@ These operators are useful for accessing **Google Groups** and finding content f
 `group:"SEO strategies"`  
 This query finds discussions within groups about SEO strategies.
 
-## 5\. Boolean Operators: +, -, and OR
+## 5. Boolean Operators: +, -, and OR
 
 Boolean operators refine searches by **forcing inclusions**, **excluding terms**, or creating **optional searches**.
 
@@ -179,7 +179,7 @@ This operator allows you to search for multiple terms.
 `"SEO strategy" OR "SEO plan"`  
 This query returns results containing either phrase.
 
-## 6\. Wildcard Operators: `*` and `.`
+## 6. Wildcard Operators: `*` and `.`
 
 Wildcard operators are used to fill in unknown terms or single-character placeholders in your search.
 
@@ -199,7 +199,7 @@ Use this to replace a single character in a search term.
 `gr.y`  
 It will match results like "gray" or "grey".
 
-## 7\. System and Database File Operators
+## 7. System and Database File Operators
 
 These operators target **system files** and **databases**, which are often sensitive.
 
@@ -258,7 +258,7 @@ These files are used in mapping software, like Google Earth. If exposed, they co
     This query may uncover mapping files with sensitive information.
 *   **Usage:** Useful for locating improperly shared geospatial data or maps.
 
-## 8\. Other Google Dorks
+## 8. Other Google Dorks
 
 Here are some other operators along with explanations of how to use them.
 

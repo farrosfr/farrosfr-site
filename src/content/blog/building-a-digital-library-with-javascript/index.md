@@ -27,7 +27,7 @@ class Media {
   constructor(title) {  
     this.title = title;  
     this.isCheckedOut = false;  
-    this.ratings = \[\];  
+    this.ratings = [];  
   }  
 }
 ```
@@ -39,7 +39,7 @@ class Media {
   constructor(title) {  
     this.title = title;  
     this.isCheckedOut = false;  
-    this.ratings = \[\];  
+    this.ratings = [];  
   }  
   
   get title() {  
@@ -90,7 +90,7 @@ class Media {
   constructor(title) {  
     this.title = title;  
     this.isCheckedOut = false;  
-    this.ratings = \[\];  
+    this.ratings = [];  
   }  
   
   get title() {  

@@ -11,11 +11,11 @@ language: 'en'
 
 I want to share some basic Linux commands to add a new user via the command line. But first, we need to log in to the default user, and then you can follow these steps.
 
-## 1\. Open the Terminal
+## 1. Open the Terminal
 
 You can press `Ctrl + Alt + T` to launch the terminal.
 
-## 2\. Create a New User
+## 2. Create a New User
 
 sudo useradd -m username
 
@@ -25,7 +25,7 @@ Replace the username you need to change. The `-m` option ensures the creation of
 
 For example, the username I set is ‘farrosfr.’
 
-## 3\. Set a Password for the New User
+## 3. Set a Password for the New User
 
 sudo passwd username
 
@@ -35,7 +35,7 @@ Replace the username with the one that has already been created.
 
 Type the new password for the new user and retype it until you see the message: ‘Password updated successfully’.
 
-## 4\. **Grant Sudo Privileges**
+## 4. **Grant Sudo Privileges**
 
 To allow the new user to execute administrative tasks, add them to the `sudo` group:
 
@@ -45,7 +45,7 @@ Don’t forget to replace the username. The `-aG` options append the user to the
 
 ![](https://cdn-images-1.medium.com/max/800/1*BvIlEz28teBul7NoET4y2w.png)
 
-## 5\. **Set the Default Shell to Bash**
+## 5. **Set the Default Shell to Bash**
 
 sudo chsh -s /bin/bash username
 
@@ -53,7 +53,7 @@ Replace the username. This command changes the user’s login shell to `/bin/bas
 
 ![](https://cdn-images-1.medium.com/max/800/1*8oMYErwxmJCbQARoHD7kmA.png)
 
-## 6\. **Verify the New User**
+## 6. **Verify the New User**
 
 id username
 
@@ -64,10 +64,10 @@ Explanation:
 *   **uid=1001(farrosfr)**: The user ID (UID) for `farrosfr` is 1001.
 *   **gid=1001(farrosfr)**: The group ID (GID) for `farrosfr` is 1001, and it's associated with the group `farrosfr`.
 *   **groups=1001(farrosfr),27(sudo)**: The user `farrosfr` belongs to two groups:   
-    1\. `farrosfr` (group ID 1001)  
-    2\. `sudo` (group ID 27), which allows the user to perform administrative tasks using `sudo`.
+    1. `farrosfr` (group ID 1001)  
+    2. `sudo` (group ID 27), which allows the user to perform administrative tasks using `sudo`.
 
-## 7\. **Switch to the New User**
+## 7. **Switch to the New User**
 
 su - username
 

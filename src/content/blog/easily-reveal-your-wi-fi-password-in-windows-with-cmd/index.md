@@ -11,12 +11,12 @@ language: 'en'
 
 If you’ve forgotten the Wi-Fi password that was previously used on your Windows device, you can easily recover it using Command Prompt. Here’s how you can do it:
 
-## 1\. Open Command Prompt
+## 1. Open Command Prompt
 
 *   Press the **Windows** key, type “Command Prompt” or “CMD” in the search bar.
 *   Right-click on “Command Prompt” and select “Run as Administrator” to open it with administrator rights.
 
-## 2\. Display Saved Wi-Fi Network Profiles
+## 2. Display Saved Wi-Fi Network Profiles
 
 *   In the Command Prompt window, type the following command and press **Enter**:
 
@@ -28,7 +28,7 @@ netsh wlan show profiles
 
 netsh wlan show profiles
 
-## 3\. View the Password for a Specific Network
+## 3. View the Password for a Specific Network
 
 *   To view the password for a specific network, type the following command, replacing `Wi-FiName` with the actual name of your network, and press **Enter**:
 

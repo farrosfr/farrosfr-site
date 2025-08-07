@@ -94,4 +94,4 @@ After that, we can add the malicious IP address to the block list and capture th
 
 **Q3**: After blocking the malicious IP address on the firewall, what message did the malicious actor leave for you?
 
-> THM{\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*}
+> THM{*******************}

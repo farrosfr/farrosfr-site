@@ -49,21 +49,21 @@ const systemPrompt = {
 
 Create a string variable named `**userContent1**` that begins the user prompt. This string should start with a sentence indicating your intention to create a recipe blog post. Then, proceed to include the relevant data from the `**userProfile**` object, making sure to specify what each piece of data from `**userProfile**` represents.
 
-const userContent1 = \`I want to create a recipe blog post. Here are my dietary restrictions: ${userProfile.dietaryRestrictions}. My cuisine preferences include: ${userProfile.cuisinePreferences}. The ingredients I have available are: ${userProfile.ingredientsAvailable}.\`;
+const userContent1 = `I want to create a recipe blog post. Here are my dietary restrictions: ${userProfile.dietaryRestrictions}. My cuisine preferences include: ${userProfile.cuisinePreferences}. The ingredients I have available are: ${userProfile.ingredientsAvailable}.`;
 
 Construct a string called `userContent2` that outlines the structure of a blog post, use the following syntax:
 
-const userContent2 = \`Please provide a blog post with a title, description, ingredients, and instructions. Format the ingredients and instructions as follows: Ingredients should be bulleted, and instructions should be numbered.\`;
+const userContent2 = `Please provide a blog post with a title, description, ingredients, and instructions. Format the ingredients and instructions as follows: Ingredients should be bulleted, and instructions should be numbered.`;
 
 Construct a string named `userContent3` that establishes certain limitations for the recipe creation, use the following syntax:
 
-const userContent3 = \`The recipe must use only the listed ingredients and should result in a single blog post with instructions not exceeding six steps.\`;
+const userContent3 = `The recipe must use only the listed ingredients and should result in a single blog post with instructions not exceeding six steps.`;
 
 Define an object named `userPrompt` that holds the instructions for the AI, use the following syntax:
 
 const userPrompt = {  
   role: 'user',  
-  content: \`${userContent1}\\n${userContent2}\\n${userContent3}\`  
+  content: `${userContent1}n${userContent2}n${userContent3}`  
 };
 
 This object includes the `role` key with the value `"user"` and the `content` key with the concatenated strings `userContent1`, `userContent2`, and `userContent3`, separated by newline characters for readability.
@@ -79,12 +79,12 @@ Here’s the code:
 
 const response = await client.chat.completions.create({  
   model: "gpt-4o",  
-  messages: \[systemPrompt, userPrompt\]  
+  messages: [systemPrompt, userPrompt]  
 });
 
 To output the chat completion reply content to the terminal, use the following syntax:
 
-console.log(response.choices\[0\].message.content);
+console.log(response.choices[0].message.content);
 
 This will print the content of the AI’s reply to the terminal. Make sure to place this line after the `response` variable has been assigned.
 

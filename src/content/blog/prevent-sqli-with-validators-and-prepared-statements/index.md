@@ -95,7 +95,7 @@ Even with validation in place, it’s crucial to use **prepared statements** to 
 Let’s refactor the SQL query to use a prepared statement:
 ```js
 db.all(  
-  "SELECT \* FROM Employee WHERE EmployeeId = $customerId",  
+  "SELECT * FROM Employee WHERE EmployeeId = $customerId",  
   {  
     $customerId: req.body.customerId  
   },  
@@ -119,7 +119,7 @@ Here is the fully updated route code that includes both validation and prepared 
 app.post('/track', (req, res) => {  
   if (validator.isInt(req.body.customerId)) {  
     db.all(  
-      "SELECT \* FROM Employee WHERE EmployeeId = $customerId",  
+      "SELECT * FROM Employee WHERE EmployeeId = $customerId",  
       {  
         $customerId: req.body.customerId  
       },  

@@ -44,7 +44,7 @@ Reset Ben’s password to continue, and then the flag will appear.
 
 **Q2**: Hack the BookFace account to reveal this task’s answer!
 
-> THM(\*\*\*\*\*\*\*\*\*\*\*\*)
+> THM(************)
 
 ## Task 2: Network Security
 
