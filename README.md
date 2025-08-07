@@ -21,42 +21,7 @@ My website is built with performance and simplicity in mind, utilizing modern we
   - 🔍 **Full-Site Search**: Powered by [Pagefind](https://pagefind.app/) for efficient client-side search.
   - 🗺️ **Sitemap & RSS Feed**: For better SEO and content syndication.
   - 📖 **Table of Contents (TOC)**: Automatically generated for longer articles to improve navigation.
-
-## Using This Theme
-
-If you like the theme and structure of this website, you are more than welcome to use it for your own project. This repository is based on the **Astro Theme Pure**, which you can find and fork from its original repository. It’s a great starting point for building your own personal blog with Astro.
-
-Feel free to explore the code, and if you have any questions, don't hesitate to open an issue.
-
-## Local Development
-
-To run this project locally, you'll need:
-
-  - [Node.js](https://nodejs.org/): 18.0.0+
-
-First, clone the repository:
-
-```shell
-git clone https://github.com/farrosfr/farrosfr-site.git
-cd farrosfr-site
-```
-
-Then, use these commands to get started:
-
-```shell
-# install dependencies
-bun install
-
-# start the dev server
-bun dev
-
-# build the project
-bun run build
-
-# preview (after the build)
-bun preview
-```
-
+    
 ## License
 
 This project is licensed under the Apache 2.0 License.
