@@ -1,6 +1,6 @@
 ---
 title: Building a Website with Jamstack
-publishDate: '2025-09-08'
+publishDate: '2025-08-09'
 description: >-
   Learn what Jamstack is, why it's secure and fast, and the step-by-step process to build your own website using modern tools like Astro and Netlify.
 tags: [Jamstack, WebDevelopment, Astro, Tutorial, Cybersecurity]
