@@ -19,21 +19,21 @@ html {
 /* poppins-regular - 400 */
 @font-face {
   font-display: swap; /* Opsi ini bagus untuk performa */
-  font-family: 'Poppins';
+  font-family: 'Inter';
   font-style: normal;
-  src: url('/fonts/poppins-v23-latin-regular.woff2') format('woff2'); /* Modern Browsers */
+  src: url('/fonts/inter-v19-latin-regular.woff2') format('woff2'); /* Modern Browsers */
 }
 /* poppins-700 - 700 */
 @font-face {
   font-display: swap; 
-  font-family: 'Poppins';
+  font-family: 'Inter';
   font-style: italic;
-  src: url('fonts/poppins-v23-latin-italic.woff2') format('woff2'); /* Modern Browsers */
+  src: url('fonts/inter-v19-latin-italic.woff2') format('woff2'); /* Modern Browsers */
 }
 
 html {
   /* Ganti font di sini */
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Theme */
