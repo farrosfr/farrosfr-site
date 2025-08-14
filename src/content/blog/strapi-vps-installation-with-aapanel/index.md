@@ -72,7 +72,7 @@ The result was a success. The Strapi admin registration page finally appeared, a
 
 ![alt text](image-2.png)
 
-### Phase 4: DNS, SSL, and PM2
+## Phase 4: DNS, SSL, and PM2
 
 1.  **Setting up DNS:** Logging into the domain registrar to create the A record needed for SSL verification.
 2.  **Installing SSL:** Using Let's Encrypt to enable SSL.
