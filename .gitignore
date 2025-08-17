@@ -78,3 +78,6 @@ ignore.*
 bunfig.toml
 /src/content/blog/test.*
 /test/
+
+# Local Netlify folder
+.netlify
