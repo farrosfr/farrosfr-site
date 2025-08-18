@@ -87,5 +87,16 @@ const {
         ) !important;
       }
     </style>
+
+    <script is:inline>
+      document.addEventListener('astro:after-swap', () => {
+        if (typeof gtag === 'function' && typeof import.meta.env.PUBLIC_GA_ID !== 'undefined') {
+          gtag('event', 'page_view', {
+            page_path: location.pathname,
+            page_location: location.href,
+          });
+        }
+      });
+    </script>
   </body>
 </html>
