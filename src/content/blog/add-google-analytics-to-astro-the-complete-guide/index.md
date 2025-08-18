@@ -60,6 +60,7 @@ declare global {
     gtag: (...args: any[]) => void;
   }
 }
+```
 
 ![alt text](image-1.png)
 

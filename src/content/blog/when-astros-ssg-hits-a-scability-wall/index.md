@@ -63,4 +63,4 @@ However, when your site grows and the need for more dynamic content management a
 
 By the way, I'm still on SSG and haven't tried hybrid yet, but the considerations above compel me to explore it eventually.
 
-> Alhamdulillah. Hope is usefull.
+> Alhamdulillah. Hope it usefull.
