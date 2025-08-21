@@ -30,7 +30,7 @@ export default defineConfig({
   //site: 'https://astro-pure.js.org',
   site: 'https://farrosfr.com',
   // base: '/docs',
-  trailingSlash: 'never',
+  trailingSlash: 'always',
 
   // Adapter
   // https://docs.astro.build/en/guides/deploy/
