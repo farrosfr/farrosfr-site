@@ -11,9 +11,9 @@ import SkillLayout from '@/components/home/SkillLayout.astro'
 import avatar from '@/assets/avatar.png'
 import config from '@/site-config'
 
-const languages = ['Html', 'JavaScript', 'CSS', 'Shell', 'Python', 'Java', 'PHP', 'SQL']
+const languages = ['Html', 'JavaScript', 'CSS', 'Shell', 'Python', 'PHP', 'SQL']
 const frontend = ['TypeScript', 'Astro']
-const backend = ['Netlify', 'Waline', 'Node.js', 'MongoDB', 'MySQL', 'PostgreSQL']
+const backend = ['Netlify', 'Waline', 'Node.js', 'MySQL', 'PostgreSQL']
 
 const MAX_POSTS = 10
 const allPosts = await getBlogCollection()
@@ -33,17 +33,24 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
       <div class='flex flex-col items-center gap-y-4'>
         <h1 class='text-3xl font-bold'>{config.author}</h1>
         <div class='flex flex-wrap justify-center gap-x-7 gap-y-3'>
-          <Label title='Indonesia' as='a' href='https://www.google.com/maps/place/Indonesia'>
-            <Icon name='location' class='size-5' slot='icon' />
-          </Label>
-          <Label
-            title='Source code'
-            as='a'
-            href='https://github.com/farrosfr/farrosfr-site'
-            target='_blank'
+          <Label 
+            title='LinkedIn' 
+            as='a' 
+            href='https://www.linkedin.com/in/username-linkedin-anda' 
+            target='_blank' 
+            rel='noopener noreferrer'
           >
-            <Icon name='github' class='size-5' slot='icon' />
+            <Icon name='link' class='size-5' slot='icon' />
           </Label>
+
+          <Label
+            title='hello@farrosfr.com'
+            as='a'
+            href='mailto:hello@farrosfr.com?subject=Inquiry%20from%20farrosfr.com'
+          >
+            <Icon name='email' class='size-5' slot='icon' />
+          </Label>
+
         </div>
       </div>
     </section>
