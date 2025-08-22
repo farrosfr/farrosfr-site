@@ -30,13 +30,13 @@ export default defineConfig({
   //site: 'https://astro-pure.js.org',
   site: 'https://farrosfr.com',
   // base: '/docs',
-  trailingSlash: 'always',
+  trailingSlash: 'never',
 
   // Adapter
   // https://docs.astro.build/en/guides/deploy/
   // 1. Vercel (serverless)
-  // adapter: netlify(),
-  output: 'static',
+  adapter: netlify(),
+  output: 'server',
 
   // 2. Vercel (static)
   // adapter: vercelStatic(),
