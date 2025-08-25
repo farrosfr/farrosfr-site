@@ -2,10 +2,18 @@
 title: Add an Advanced Preloader to WordPress
 publishDate: '2025-08-25'
 description: >-
-  earn how to add a stylish preloader with a CSS spinner and percentage counter to your WordPress site for a better user experience.
+  Learn how to add a stylish preloader with a CSS spinner and percentage counter to your WordPress site for a better user experience.
 tags: ['WordPress', 'Preloader', 'jQuery', 'CSS']
 heroImage: { src: './image.png', color: '#23cbee' }
 language: 'en'
+---
+
+> **DISCLAIMER**
+>
+> This tutorial is intended for intermediate to advanced users who are familiar with the WordPress file structure and the use of cPanel/FTP. The steps described below involve modifying core files and directory structures. Any mistake in following this guide can result in an inaccessible website or data loss.
+>
+> **You are proceeding at your own risk.** The author strongly recommends that you perform a **full backup (both files and database)** before attempting any method in this article. The author is not liable for any damage or data loss that may occur.
+
 ---
 
 ## **How to Add an Advanced Preloader with a Percentage Counter to WordPress**
