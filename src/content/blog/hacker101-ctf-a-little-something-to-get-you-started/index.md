@@ -1,5 +1,5 @@
 ---
-title: Hacker101 CTF | A little something to get you started
+title: Hacker101 CTF | A Little Something to Get You Started
 description: A quick walkthrough for the Hacker101 CTF challenge. Learn how to find hidden information and flags using your browser's built-in developer tools.
 publishDate: 2025-09-11
 tags: ['Hacker101', 'CTF', 'Writeup', 'Web Security']
