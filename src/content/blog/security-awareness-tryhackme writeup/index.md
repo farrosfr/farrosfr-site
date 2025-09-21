@@ -3,6 +3,7 @@ title: Security Awareness | TryHackMe Write-Up
 publishDate: '2025-09-13'
 description: >-
   An introduction to security awareness; why its important, the impact of being attacked, different threat actors and basic account security.
+tags: [tryhackme, security, writeup]
 heroImage: {src: './image.png'}
 language: 'en'
 ---
