@@ -2,11 +2,11 @@
 title: 'Firewall Fundamentals | TryHackMe Write-Up'
 publishDate: '2025-10-02'
 description: Learn about firewalls and get hands-on with Windows and Linux built-in firewalls.
-tags: [tryhackme, firewall, writeup]
+tags: [tryhackme, firewall, write-up]
 heroImage: {src: './image.png', alt: 'credit: TryHackMe'}
 language: 'en'
 ---
-Here i want to share about my writeup for the room [Firewall Fundamentals](https://tryhackme.com/room/firewallfundamentals) (Premium Room), learn about firewalls and get hands-on with Windows and Linux built-in firewalls. I wrote this in 2025 and hope it is useful for learning about cybersecurity.
+Here i want to share about my write-up for the room [Firewall Fundamentals](https://tryhackme.com/room/firewallfundamentals) (Premium Room), learn about firewalls and get hands-on with Windows and Linux built-in firewalls. I wrote this in 2025 and hope it is useful for learning about cybersecurity.
 
 ## Task 1: What Is the Purpose of a Firewall
 

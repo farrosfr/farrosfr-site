@@ -3,7 +3,7 @@ title: 'Simply Transform Negative Thoughts into Hundreds of Push-ups'
 publishDate: '2025-04-30T03:01:34.768Z'
 description: >-
   How to Simply Transform Your Negative Thoughts into Hundreds of Push-ups | FarrosFR.
-tags: [Mental Health, Fitness, Self-Help, Productivity, Discipline]
+tags: [discipline]
 heroImage: {src: './image.png',color: '#fffcfc'}
 language: 'en'
 ---
@@ -25,7 +25,7 @@ Some of the studies I have [read](https://en.wikipedia.org/wiki/Neurobiological_
 
 I have implemented this method into my daily routine, and I also track it in my mobile app, Loop Habit Tracker. You can download it for free from the Play Store or App Store. Sorry, I’m not endorsing it. Here is the chart that I try to record every day.
 
-![](https://cdn-images-1.medium.com/max/800/1*ldDzQBjzSwui2FDP514ZgQ.jpeg)
+![alt text](https://cdn-images-1.medium.com/max/800/1*ldDzQBjzSwui2FDP514ZgQ.jpeg)
 
 Push Ups / Dips in Loop Habbit Tracker
 
@@ -36,9 +36,9 @@ Sometimes i really don’t realize it. For example, if I am feel sad then I will
 **Thank you so much for reading!**  
 Your time and attention mean the world to me. If you enjoyed this article, let’s stay connected and continue the conversation. You can find me on:
 
-*   [LinkedIn](https://www.linkedin.com/in/farrosfr)
-*   [Instagram](https://www.instagram.com/farrosfr)
-*   [X (formerly Twitter)](https://x.com/farrosfr_)
-*   [Threads](https://www.threads.net/farrosfr)
+* [LinkedIn](https://www.linkedin.com/in/farrosfr)
+* [Instagram](https://www.instagram.com/farrosfr)
+* [X (formerly Twitter)](https://x.com/farrosfr_)
+* [Threads](https://www.threads.net/farrosfr)
 
 Feel free to reach out — I’d love to hear your thoughts and ideas. Until next time, stay curious and keep exploring!

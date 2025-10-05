@@ -3,7 +3,7 @@ title: Add an Advanced Preloader to WordPress
 publishDate: '2025-08-25'
 description: >-
   Learn how to add a stylish preloader with a CSS spinner and percentage counter to your WordPress site for a better user experience.
-tags: ['WordPress', 'Preloader', 'jQuery', 'CSS']
+tags: ['wp', 'jquery', 'css']
 heroImage: { src: './image.png', color: '#23cbee' }
 language: 'en'
 ---
@@ -24,8 +24,6 @@ The counter will quickly move to 99%, waiting for the page to load, before reach
 
 Here's how to add it to your WordPress theme manually.
 
------
-
 ## **Step 1: Add the HTML Structure**
 
 First, we need to place the HTML for the preloader right after the opening `<body>` tag so it's the first thing to render.
@@ -43,8 +41,6 @@ First, we need to place the HTML for the preloader right after the opening `<bod
 ```
 
 **Important:** Replace `YOUR_LOGO_URL` with the actual URL of your logo image, which you can upload via the WordPress Media Library.
-
------
 
 ## **Step 2: Style the Preloader with CSS**
 
@@ -105,8 +101,6 @@ Next, we'll add the CSS to make the preloader a full-screen overlay, center the 
 /* ===== Preloader Styling End ===== */
 ```
 
------
-
 ## **Step 3: Implement the JavaScript Logic**
 
 This is the core logic that runs the percentage counter and hides the preloader once the site is fully loaded. WordPress includes jQuery by default, so we can use it directly.
@@ -146,9 +140,8 @@ jQuery(document).ready(function($) {
 
 Once you have added these three code blocks, your WordPress site will now feature a professional and dynamic preloader that improves the perceived performance and overall user experience.
 
-The repo link is also posted here: https://github.com/farrosfr/jquery-preloader-with-counter
+The repo link is also posted here: <https://github.com/farrosfr/jquery-preloader-with-counter>
 
 ---
-
 
 >Alhamdulillah. Hope it usefull.

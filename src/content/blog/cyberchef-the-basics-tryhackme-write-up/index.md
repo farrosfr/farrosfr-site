@@ -2,11 +2,11 @@
 title: 'CyberChef: The Basics | TryHackMe Write-Up'
 publishDate: '2025-10-02'
 description: This room is an introduction to CyberChef, the Swiss Army knife for cyber security professionals.
-tags: [tryhackme, CyberChef, writeup]
+tags: [tryhackme, cyberchef, write-up]
 heroImage: {src: './image.png', alt: 'credit: TryHackMe'}
 language: 'en'
 ---
-Here i want to share about my writeup for the room [CyberChef: The Basics](https://tryhackme.com/room/cyberchefbasics), this room is an introduction to CyberChef, the Swiss Army knife for cyber security professionals. I wrote this in 2025 and hope it is useful for learning about cybersecurity.
+Here i want to share about my write-up for the room [CyberChef: The Basics](https://tryhackme.com/room/cyberchefbasics), this room is an introduction to CyberChef, the Swiss Army knife for cyber security professionals. I wrote this in 2025 and hope it is useful for learning about cybersecurity.
 
 ## Task 1: Introduction
 

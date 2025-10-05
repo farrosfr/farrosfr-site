@@ -3,7 +3,7 @@ title: Web Application Basics | TryHackMe Write-Up
 publishDate: '2025-03-22T00:39:10.588Z'
 description: >-
   Web Application Basics | TryHackMe | Write-Up by FarrosFR.
-tags: [Web Basics, TryHackMe, Write-up, HTTP, Networking]
+tags: [tryhackme, write-up]
 heroImage: {src: './image.png',color: '#371360'}
 language: 'en'
 ---
@@ -125,11 +125,11 @@ Q3: Which HTTP header directive is used to prevent browsers from interpreting fi
 
 Q1: Make a **GET** request to `/api/users`. What is the flag?
 
-![](https://cdn-images-1.medium.com/max/800/1*ryNu_9RfRi1wiRIaPbRJ7g.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*ryNu_9RfRi1wiRIaPbRJ7g.png)
 
 **GET** request to `/api/users`
 
-![](https://cdn-images-1.medium.com/max/800/1*BfJzM9C_kKCC1JtVBIDScw.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*BfJzM9C_kKCC1JtVBIDScw.png)
 
 THM Browser
 
@@ -139,11 +139,11 @@ Q2: Make a **POST** request to `/api/user/2` and update the **country** of Bob f
 
 Set the parameter for the country to ‘US’.
 
-![](https://cdn-images-1.medium.com/max/800/1*Ul9olL7HLqDTOfKU0IrrZQ.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*Ul9olL7HLqDTOfKU0IrrZQ.png)
 
 Parameters
 
-![](https://cdn-images-1.medium.com/max/800/1*ERdjFQAAPG6euCNAtjOlAg.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*ERdjFQAAPG6euCNAtjOlAg.png)
 
 **POST** request to `/api/user/2`
 
@@ -151,7 +151,7 @@ Parameters
 
 Make a **DELETE** request to `/api/user/1` to delete the user. What is the flag?
 
-![](https://cdn-images-1.medium.com/max/800/1*CBXPGZ6dmVkDrB_4lLiSIw.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*CBXPGZ6dmVkDrB_4lLiSIw.png)
 
 **DELETE** request to `/api/user/1`
 

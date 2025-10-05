@@ -2,7 +2,7 @@
 title: Migrate Email Using IMAP Async with Only One Active Domain
 publishDate: '2024-11-20T05:04:18.694Z'
 description: 'How to Migrate Email Using IMAP Async with Only One Active Domain.'
-tags: [Email Migration, IMAP, SysAdmin, Hosting, Tutorial]
+tags: [email]
 heroImage: {src: './image.png',color: '#f6f7fc'}
 language: 'en'
 ---
@@ -17,17 +17,17 @@ The migration process involves connecting the domain through DNS by using MX Rec
 
 Here is the status showing that the connection has successfully been established with Hostinger,
 
-![](https://cdn-images-1.medium.com/max/800/1*Wy9vu_RXXHb8QZJnVQgEkA.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*Wy9vu_RXXHb8QZJnVQgEkA.png)
 
 while still being connected to the previous hosting ([emailkerja.id](http://emailkerja.id)).
 
-![](https://cdn-images-1.medium.com/max/800/1*cK4PosIgT8xROdZoN1tpNQ.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*cK4PosIgT8xROdZoN1tpNQ.png)
 
 Once connected and with the note that the MX Record must be prioritized at the new hosting, we can access the IMAP Async process online to synchronize the emails. This process is much easier to coordinate with the company team compared to instructing colleagues to manually back up and restore emails using Outlook Classic/365. This is because not everyone has that version, considering that Outlook is usually part of an Office bundle with a license, while the New Outlook does not support this feature.
 
 We can use the following link [https://imapsync.lamiral.info/X/](https://imapsync.lamiral.info/X/) to perform IMAP synchronization online (for accounts under 3 GB).
 
-![](https://cdn-images-1.medium.com/max/800/1*6hAO993OOqXu2dJEMgInQw.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*6hAO993OOqXu2dJEMgInQw.png)
 
 Here, we can enter the email address, password, and IMAP server details for both the source and destination mailboxes. Then, we can click “Sync” to start the synchronization process. There is a detailed log that can be scrolled down, and a percentage status is updated every 6 seconds to track progress.
 
@@ -35,7 +35,7 @@ Once completed, the old emails will be copied to the new email hosting. This is 
 
 However, if the account’s storage exceeds 3 GB, we need to access the email import feature provided by the email hosting service. Hostinger offers this feature for accounts with storage exceeding 3 GB, enabling email migration.
 
-![](https://cdn-images-1.medium.com/max/800/1*oeQo5IIKmc1lfcmCAMYnmg.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*oeQo5IIKmc1lfcmCAMYnmg.png)
 
 Once completed, we can see that all the emails have been copied to the new hosting, and we can now use the new email hosting for sending and receiving emails.
 

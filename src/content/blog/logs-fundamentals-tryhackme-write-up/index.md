@@ -2,11 +2,11 @@
 title: 'Logs Fundamentals | TryHackMe Write-Up'
 publishDate: '2025-09-27'
 description: Learn what logs are and how to analyze them for effective investigation.
-tags: [tryhackme, logs, writeup]
+tags: [tryhackme, logs, write-up]
 heroImage: {src: './image.png', alt: 'credit: TryHackMe'}
 language: 'en'
 ---
-Here i want to share about my writeup for the room [Logs Fundamentals](https://tryhackme.com/room/logsfundamentals) (Premium Room), learn what logs are and how to analyze them for effective investigation. I wrote this in 2025 and hope it is useful for learning about cybersecurity.
+Here i want to share about my write-up for the room [Logs Fundamentals](https://tryhackme.com/room/logsfundamentals) (Premium Room), learn what logs are and how to analyze them for effective investigation. I wrote this in 2025 and hope it is useful for learning about cybersecurity.
 
 ## Task 1: Introduction to Logs
 

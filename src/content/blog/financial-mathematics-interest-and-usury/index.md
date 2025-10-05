@@ -3,7 +3,7 @@ title: 'Financial Mathematics: Interest and Usury'
 publishDate: '2024-10-25T02:49:59.679Z'
 description: >-
   'Financial Mathematics: Interest and Usury.'
-tags: [Finance, Mathematics, Usury, Interest, Ethics]
+tags: [usury, finance]
 heroImage: {src: './image.png'}
 language: 'en'
 ---

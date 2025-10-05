@@ -3,7 +3,7 @@ title: Principles of Security | TryHackMe Write-Up
 publishDate: '2025-04-29T05:20:19.889Z'
 description: >-
   Principles of Security | TryHackMe | Write-Up by FarrosFR.
-tags: [Security Principles, TryHackMe, Write-up, CIA Triad, Cybersecurity]
+tags: [tryhackme, write-up]
 heroImage: {src: './image.png', color: '#ffdc00'}
 language: 'en'
 ---
@@ -21,9 +21,9 @@ Let’s proceed!
 
 The CIA triad is a fundamental information security model comprising Confidentiality, Integrity, and Availability. It guides the creation of security policies to ensure that sensitive data is protected, remains accurate, and is accessible to authorized users.
 
-*   **Confidentiality** ensures that sensitive data is protected from unauthorized access or misuse by implementing access controls and classification systems.
-*   **Integrity** maintains data accuracy and consistency, preventing unauthorized or accidental modifications through methods like access restrictions, digital signatures, and hash verifications.
-*   **Availability** ensures data and systems are accessible to authorized users when needed by using reliable hardware, backups, and robust security protocols to minimize downtime.
+* **Confidentiality** ensures that sensitive data is protected from unauthorized access or misuse by implementing access controls and classification systems.
+* **Integrity** maintains data accuracy and consistency, preventing unauthorized or accidental modifications through methods like access restrictions, digital signatures, and hash verifications.
+* **Availability** ensures data and systems are accessible to authorized users when needed by using reliable hardware, backups, and robust security protocols to minimize downtime.
 
 Each component is interdependent; failing to meet one can undermine the entire security framework. The CIA triad provides a continuous cycle for evaluating and prioritizing data protection needs in various contexts, from cybersecurity to physical record storage.
 
@@ -65,8 +65,8 @@ The **principle of least privilege** is essential — users should only have
 
 Security models help organizations formally achieve the CIA triad — **Confidentiality, Integrity, and Availability** — by providing structured methods to control access to information systems.
 
-*   **Bell-La Padula Model** focuses on **confidentiality** using hierarchy-based policies. It applies rules like “no write down, no read up,” suitable for hierarchical organizations (e.g., military or government) where trusted, vetted users operate. While easy to implement and mirroring real-life org charts, it assumes users are trustworthy and doesn’t fully conceal the existence of information.
-*   **Biba Model** targets **integrity** with the principle of “no write up, no read down.” This means users can only write at or below their level and read above it, ensuring data accuracy over secrecy. While simple and effective for integrity, it may create operational inefficiencies and complicate access control in environments with many roles.
+* **Bell-La Padula Model** focuses on **confidentiality** using hierarchy-based policies. It applies rules like “no write down, no read up,” suitable for hierarchical organizations (e.g., military or government) where trusted, vetted users operate. While easy to implement and mirroring real-life org charts, it assumes users are trustworthy and doesn’t fully conceal the existence of information.
+* **Biba Model** targets **integrity** with the principle of “no write up, no read down.” This means users can only write at or below their level and read above it, ensuring data accuracy over secrecy. While simple and effective for integrity, it may create operational inefficiencies and complicate access control in environments with many roles.
 
 **Summary**: Bell-La Padula protects sensitive information in hierarchical setups, while Biba safeguards data accuracy where integrity is crucial, such as in software development. Each model has strengths and limitations, often tailored to the specific security priorities of an organization.
 

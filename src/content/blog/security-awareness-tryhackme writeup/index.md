@@ -3,19 +3,21 @@ title: Security Awareness | TryHackMe Write-Up
 publishDate: '2025-09-13'
 description: >-
   An introduction to security awareness; why its important, the impact of being attacked, different threat actors and basic account security.
-tags: [tryhackme, security, writeup]
+tags: [tryhackme, write-up]
 heroImage: {src: './image.png'}
 language: 'en'
 ---
-Here i want to share about my writeup for the room [Security Awareness](https://tryhackme.com/room/securityawareness), an introduction to security awareness; why its important, the impact of being attacked, different threat actors and basic account security. I wrote this in 2025 and hope it is useful for learning about cybersecurity.
+Here i want to share about my write-up for the room [Security Awareness](https://tryhackme.com/room/securityawareness), an introduction to security awareness; why its important, the impact of being attacked, different threat actors and basic account security. I wrote this in 2025 and hope it is useful for learning about cybersecurity.
 
 ![THM](https://tryhackme-images.s3.amazonaws.com/room-icons/d3d7881518d71dc929b4e84c2b47ed55.png)
 
 ## Task 1: Introduction to Security Awareness
+
 Read why security awareness is so important for everyone.
 >No Answer Needed
 
 ## Task 2: Why Security Awareness is essential
+
 Security awareness training is a must-have skill to counter efforts by attackers and reduce risks within the business. A few of the benefits are below:
 
 1. Help prevent data breaches
@@ -51,17 +53,17 @@ The motivation of threat actors may vary and can be categorized into different g
 - Thrill-seekers are motivated by satisfaction.
 - Insider threat actors are motivated by discontent.
 
-Who would most likely be interested in exploiting a business? 
+Who would most likely be interested in exploiting a business?
 >Cybercriminals
 
-Who would most likely be interested in exploiting a personal computer for fun? 
+Who would most likely be interested in exploiting a personal computer for fun?
 >Thrill-seekers.
 
-Who would most likely be interested in exploiting a website to deliver a message? 
+Who would most likely be interested in exploiting a website to deliver a message?
 >Hacktivists
 
 ## Task 6: Conclusion
 
-This room introduced you to the basics of security awareness concepts and knowledge that can help you stay safe online. 
+This room introduced you to the basics of security awareness concepts and knowledge that can help you stay safe online.
 
 Complete this task and join the [common attacks](https://tryhackme.com/room/commonattacks) room.

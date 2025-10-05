@@ -2,11 +2,11 @@
 title: 'SOC Fundamentals | TryHackMe Write-Up'
 publishDate: '2025-09-24'
 description: Learn about the SOC team and their processes.
-tags: [tryhackme, SOC, writeup]
+tags: [tryhackme, SOC, write-up]
 heroImage: {src: './image.png', alt: 'credit: TryHackMe'}
 language: 'en'
 ---
-Here i want to share about my writeup for the room [SOC Fundamentals](https://tryhackme.com/room/socfundamentals), learn about the SOC team and their processes. I wrote this in 2025 and hope it is useful for learning about cybersecurity.
+Here i want to share about my write-up for the room [SOC Fundamentals](https://tryhackme.com/room/socfundamentals), learn about the SOC team and their processes. I wrote this in 2025 and hope it is useful for learning about cybersecurity.
 
 ## Task 1: Introduction to SOC
 

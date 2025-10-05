@@ -3,7 +3,7 @@ title: OWASP Top 10–2021 | TryHackMe Write-up
 publishDate: '2025-03-30T16:32:56.133Z'
 description: >-
   OWASP Top 10–2021 | TryHackMe | Write-up by FarrosFR.
-tags: [OWASP, TryHackMe, Write-up, Web Security, Vulnerability]
+tags: [owasp, tryhackme, write-up]
 heroImage: {src: './image.png',color: '#ffffff'}
 language: 'en'
 ---
@@ -11,18 +11,18 @@ Here is my article on the walkthrough of free room for [TryHackMe: OWASP TOP 10 
 
 ## Task 1: Introduction
 
-Here is the list of the Top 10 OWASP 2021 vulnerabilities that will be discussed in this write-up. The source can also be checked [here](https://owasp.org/www-project-top-ten/):
+Here is the list of the Top 10 OWASP 2021 vulnerabilities that will be discussed in this write-up. The source can also be checked at the [OWASP Top Ten Project page](https://owasp.org/www-project-top-ten/):
 
-1.  Broken Access Control
-2.  Cryptographic Failures
-3.  Injection
-4.  Insecure Design
-5.  Security Misconfiguration
-6.  Vulnerable and Outdated Components
-7.  Identification and Authentication Failures
-8.  Software and Data Integrity Failures
-9.  Security Logging & Monitoring Failures
-10.  Server-Side Request Forgery (SSRF)
+1. Broken Access Control
+2. Cryptographic Failures
+3. Injection
+4. Insecure Design
+5. Security Misconfiguration
+6. Vulnerable and Outdated Components
+7. Identification and Authentication Failures
+8. Software and Data Integrity Failures
+9. Security Logging & Monitoring Failures
+10. Server-Side Request Forgery (SSRF)
 
 **Read the above.**
 
@@ -32,8 +32,8 @@ Here is the list of the Top 10 OWASP 2021 vulnerabilities that will be discussed
 
 To access these machines, you need to either:
 
-1.  **Connect using OpenVPN**
-2.  **Use an in-browser Linux Machine**
+1. **Connect using OpenVPN**
+2. **Use an in-browser Linux Machine**
 
 **Connect to our network or deploy the AttackBox.**
 
@@ -53,7 +53,7 @@ To access these machines, you need to either:
 
 **Deploy the machine and go to** [**http://MACHINEIP**](http://machine_ip/) **— Login with the username noot and the password test1234.**
 
-![](https://cdn-images-1.medium.com/max/800/1*HkL2UpVZpeBHZNNm86tREw.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*HkL2UpVZpeBHZNNm86tREw.png)
 
 THM Note Server
 
@@ -63,7 +63,7 @@ THM Note Server
 
 Change the noteid from 1 to 0.
 
-![](https://cdn-images-1.medium.com/max/800/1*ZmAmlKZckfCBXfuJiwKn3Q.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*ZmAmlKZckfCBXfuJiwKn3Q.png)
 
 THM Flag
 
@@ -95,19 +95,19 @@ Have a look around the web app. The developer has left themselves a note indicat
 
 **Q1: What is the name of the mentioned directory?**
 
-![](https://cdn-images-1.medium.com/max/800/1*MDMKT0TJ04A4b4EQq5auFg.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*MDMKT0TJ04A4b4EQq5auFg.png)
 
 Web App
 
 Go to the login page.
 
-![](https://cdn-images-1.medium.com/max/800/1*i6EYLO40IMDwWfhZmB0rlA.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*i6EYLO40IMDwWfhZmB0rlA.png)
 
 Login Page
 
 We can view the source code on the web by jumping into the developer tools (Ctrl+Shift+I in Mozilla) to inspect the code.
 
-![](https://cdn-images-1.medium.com/max/800/1*o3DLOjMx0Pb1u7p7c-B6mg.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*o3DLOjMx0Pb1u7p7c-B6mg.png)
 
 We found this note from the developer with green-colored text.
 
@@ -117,7 +117,7 @@ We found this note from the developer with green-colored text.
 
 We are going to the path [https://MACHINEIP:81/assets](https://machine-ip:81/assets).
 
-![](https://cdn-images-1.medium.com/max/800/1*CW6WwPYr41UAOPsvd4AdXA.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*CW6WwPYr41UAOPsvd4AdXA.png)
 
 > webapp.db
 
@@ -125,11 +125,11 @@ We are going to the path [https://MACHINEIP:81/assets](https://machine-ip:81/ass
 
 Download the database from the website, then type `ls -l` in the Downloads directory.
 
-![](https://cdn-images-1.medium.com/max/800/1*XPvoihVcRzjUsmSTzgoVOA.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*XPvoihVcRzjUsmSTzgoVOA.png)
 
 Opens the SQLite command-line interface and connects to the `webapp.db` database with `sqlite3 webapp.db`. Lists all the tables in the database with `.tables` to view the `sessions` and `users` tables. Then, run `PRAGMA table_info(users);` to view the columns. After that, execute the script `SELECT username, password FROM users;` to retrieve specific details about the admin's password.
 
-![](https://cdn-images-1.medium.com/max/800/1*Un8KDRcPYZMlhrJ-cJ1d4Q.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*Un8KDRcPYZMlhrJ-cJ1d4Q.png)
 
 > 6eea9b7ef19179a06954edd0f6c05ceb
 
@@ -138,7 +138,7 @@ Crack the hash.
 
 Open the website crackstation.net, then enter the hash and click the ‘Crack Hashes’ button to decrypt the password.
 
-![](https://cdn-images-1.medium.com/max/800/1*So3Ogqma7SmXb0WrQ0u8xg.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*So3Ogqma7SmXb0WrQ0u8xg.png)
 
 [crackstation.net](https://crackstation.net/)
 
@@ -146,11 +146,11 @@ Open the website crackstation.net, then enter the hash and click the ‘Crack Ha
 
 **Q5: Log in as the admin. What is the flag?**
 
-![](https://cdn-images-1.medium.com/max/800/1*Uiqj-2eFxi6KDU41_PkuiA.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*Uiqj-2eFxi6KDU41_PkuiA.png)
 
 Login Web
 
-![](https://cdn-images-1.medium.com/max/800/1*7OIIBdZqo5JhT0rGKVAi4Q.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*7OIIBdZqo5JhT0rGKVAi4Q.png)
 
 Flag
 
@@ -168,13 +168,13 @@ To complete the questions below, navigate to [http://MACHINEIP:82/](http://10.10
 
 **Q1: What strange text file is in the website’s root directory?**
 
-![](https://cdn-images-1.medium.com/max/800/1*XlpjEWk_6e4dKn6h77JxFQ.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*XlpjEWk_6e4dKn6h77JxFQ.png)
 
 [http://MACHINEIP:82](http://MACHINE_IP:82/)
 
 Try to run the script `$(ls)` that can generate the URL path `[http://MACHINE_IP:82/?cow=default&mooing=%24%28ls%29](http://MACHINE_IP:82/?cow=default&mooing=%24%28ls%29)`
 
-![](https://cdn-images-1.medium.com/max/800/1*5Cmj6a6V-y690ooMh2ip_Q.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*5Cmj6a6V-y690ooMh2ip_Q.png)
 
 > drpepper.txt
 
@@ -182,7 +182,7 @@ Try to run the script `$(ls)` that can generate the URL path `[http://MACHINE_IP
 
 You can run this script to check `$(cat /etc/passwd)` or this script for more details to check if any non-root, non-service, or non-daemon users are present: `$(cat /etc/passwd | awk -F: '{if ($3 >= 1000 && $3 < 65534) print $1}' | wc -l)`
 
-![](https://cdn-images-1.medium.com/max/800/1*Sq02iS8JNU1b_4Qi8CFLTQ.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*Sq02iS8JNU1b_4Qi8CFLTQ.png)
 
 > 0
 
@@ -190,7 +190,7 @@ You can run this script to check `$(cat /etc/passwd)` or this script for more de
 
 Start with the command recommended by TryHackMe: `$(whoami)`
 
-![](https://cdn-images-1.medium.com/max/800/1*E30-xfZG0Na0mHL4asFgGQ.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*E30-xfZG0Na0mHL4asFgGQ.png)
 
 $(whoami)
 
@@ -200,7 +200,7 @@ $(whoami)
 
 Run this script: `$(awk -F: '$3 >= 1000' /etc/passwd).` This script uses `awk` to filter and display user entries from the `/etc/passwd` file where the user's UID (User ID) is greater than or equal to 1000. UIDs starting from 1000 are typically assigned to non-system (regular) users.
 
-![](https://cdn-images-1.medium.com/max/800/1*rtXeFVWNY92CPZJEZ_L_-Q.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*rtXeFVWNY92CPZJEZ_L_-Q.png)
 
 > /sbin/nologin
 
@@ -208,7 +208,7 @@ Run this script: `$(awk -F: '$3 >= 1000' /etc/passwd).` This script uses `awk` t
 
 You can run this script to check the version of Linux: `$(cat /etc/os-release)`
 
-![](https://cdn-images-1.medium.com/max/800/1*71bsxRyMCRvWBKmp5tU8Mg.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*71bsxRyMCRvWBKmp5tU8Mg.png)
 
 > 3.16.0
 
@@ -216,7 +216,7 @@ You can run this script to check the version of Linux: `$(cat /etc/os-release)`
 
 **Try to reset joseph’s password. Keep in mind the method used by the site to validate if you are indeed joseph.**
 
-![](https://cdn-images-1.medium.com/max/800/1*_cCNBsHCnDP21rxeQBH6yw.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*_cCNBsHCnDP21rxeQBH6yw.png)
 
 login
 
@@ -226,27 +226,27 @@ login
 
 Try resetting the password.
 
-![](https://cdn-images-1.medium.com/max/800/1*R2579B0KgF_EtMQ0vDZBhg.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*R2579B0KgF_EtMQ0vDZBhg.png)
 
 reset password
 
 There are so many possible answers to the security question here.
 
-![](https://cdn-images-1.medium.com/max/800/1*fS9SpmJYkx9_0Ahi79PgCA.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*fS9SpmJYkx9_0Ahi79PgCA.png)
 
 secure question
 
 Found the correct answer to the color question, which is ‘green.’
 
-![](https://cdn-images-1.medium.com/max/800/1*7HH_hHcQ47-1rB9wjbtdJQ.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*7HH_hHcQ47-1rB9wjbtdJQ.png)
 
 secure question pass
 
-![](https://cdn-images-1.medium.com/max/800/1*p4tOLVaU3Dzpi7UhlBIlcw.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*p4tOLVaU3Dzpi7UhlBIlcw.png)
 
 We can try logging in after that and search for the flag
 
-![](https://cdn-images-1.medium.com/max/800/1*5Bo2NHNnxvGIuwUnGd78Fg.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*5Bo2NHNnxvGIuwUnGd78Fg.png)
 
 > THM{Not3venc4tzc0uldsav3U!}
 
@@ -254,7 +254,7 @@ We can try logging in after that and search for the flag
 
 **Navigate to** [**http://MACHINEIP:86/console**](http://10.10.6.94:86/console) **to access the Werkzeug console.**
 
-![](https://cdn-images-1.medium.com/max/800/1*1pVq7eVopcbZo-u639Rj1g.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*1pVq7eVopcbZo-u639Rj1g.png)
 
 Werkzeug Console
 
@@ -266,7 +266,7 @@ import os; print(os.popen("ls -l").read())
 
 **Q1: What is the database file name (the one with the .db extension) in the current directory?**
 
-![](https://cdn-images-1.medium.com/max/800/1*mna438OC2sxrlJfNtJgQsA.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*mna438OC2sxrlJfNtJgQsA.png)
 
 ls -l
 
@@ -274,7 +274,7 @@ ls -l
 
 **Q2: Modify the code to read the contents of the** `**app.py**` **file, which contains the application's source code. What is the value of the** `**secret_flag**` **variable in the source code?**
 
-![](https://cdn-images-1.medium.com/max/800/1*63zrzfmfqlNZ5ixddvZRuw.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*63zrzfmfqlNZ5ixddvZRuw.png)
 
 cat app.py
 
@@ -296,19 +296,19 @@ cat app.py
 
 Navigate to [http://10.10.6.94:84](http://10.10.6.94:84/) where you’ll find a vulnerable application. All the information you need to exploit it can be found online.
 
-![](https://cdn-images-1.medium.com/max/800/1*OIGsFeCEzdOItqupfa5VwQ.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*OIGsFeCEzdOItqupfa5VwQ.png)
 
 **Q1: What is the content of the /opt/flag.txt file?**
 
 First, open [https://www.exploit-db.com/](https://www.exploit-db.com/) to check for vulnerabilities using the keyword ‘book store’ and verify the results.
 
-![](https://cdn-images-1.medium.com/max/800/1*yVUjyj0Qf3jEz3w-rrNf1A.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*yVUjyj0Qf3jEz3w-rrNf1A.png)
 
 We found this, and then we can download the exploit file to our directory.
 
 Try running the script file `47887.py` with the command `python3 47887.py http://MACHINE_IP:84`, and then use the script as instructed by running `cat /opt/flag.txt`.
 
-![](https://cdn-images-1.medium.com/max/800/1*as-FKA2I_cNf6Shvwkm6gQ.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*as-FKA2I_cNf6Shvwkm6gQ.png)
 
 > THM{But1tsn0tmyf4ult!}
 
@@ -322,23 +322,23 @@ Try running the script file `47887.py` with the command `python3 47887.py http:/
 
 **Q1: What is the flag that you found in darren’s account?**
 
-![](https://cdn-images-1.medium.com/max/800/1*UxcqKf6wrzcZkFQhb17PrQ.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*UxcqKf6wrzcZkFQhb17PrQ.png)
 
 Try to register with Darren as your username based on the instructions, and then the error message will be displayed.
 
-![](https://cdn-images-1.medium.com/max/800/1*wLVIrJ2Dj387phS0d-1NAA.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*wLVIrJ2Dj387phS0d-1NAA.png)
 
 Let’s try with the user ‘ darren’ (with a space in front of the text).
 
-![](https://cdn-images-1.medium.com/max/800/1*3eFDr50fVbFvV1QAAxU7QQ.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*3eFDr50fVbFvV1QAAxU7QQ.png)
 
-![](https://cdn-images-1.medium.com/max/800/1*CsxpVt587ERKs9YZiquWGg.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*CsxpVt587ERKs9YZiquWGg.png)
 
 Try to log in as ‘ darren’.
 
-![](https://cdn-images-1.medium.com/max/800/1*_U1vZmwu1l07d6nZxn0LMg.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*_U1vZmwu1l07d6nZxn0LMg.png)
 
-![](https://cdn-images-1.medium.com/max/800/1*0MUlIXS3ECaLS4jFbVbOMw.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*0MUlIXS3ECaLS4jFbVbOMw.png)
 
 > fe86079416a21a3c99937fea8874b667
 
@@ -364,31 +364,31 @@ Try the same method to log in as the ‘darren’ user.
 
 Open the website [srihash.org](https://www.srihash.org/) and then encrypt the given URL with SHA-256.
 
-![](https://cdn-images-1.medium.com/max/800/1*0fI4sXttJVmTXnV9FjeSPQ.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*0fI4sXttJVmTXnV9FjeSPQ.png)
 
 ## Task 20: Data Integrity Failures
 
 **Q1: Try logging into the application as guest. What is guest’s account password?**
 
-![](https://cdn-images-1.medium.com/max/800/1*DJRdTF_RwQgExeXZDVicog.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*DJRdTF_RwQgExeXZDVicog.png)
 
 MACHINEIP:8089
 
 Try to log in with the username: guest
 
-![](https://cdn-images-1.medium.com/max/800/1*VpF3Ws1RVKrvJV2AUZMLrw.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*VpF3Ws1RVKrvJV2AUZMLrw.png)
 
-![](https://cdn-images-1.medium.com/max/800/1*0EWDaKUAh0sxV4djSDjwIQ.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*0EWDaKUAh0sxV4djSDjwIQ.png)
 
 > guest
 
 If your login was successful, you should now have a JWT stored as a cookie in your browser. Press F12 to bring out the Developer Tools.
 
-![](https://cdn-images-1.medium.com/max/800/1*8UdAyQdRvrNiKMBaGc_tAg.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*8UdAyQdRvrNiKMBaGc_tAg.png)
 
 Depending on your browser, you will be able to edit cookies from the following tabs:
 
-![](https://cdn-images-1.medium.com/max/800/1*UvQUzhryOH_f7mDs3-kJCQ.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*UvQUzhryOH_f7mDs3-kJCQ.png)
 
 **Q2: What is the name of the website’s cookie containing a JWT token?**
 
@@ -415,7 +415,7 @@ Finally, concatenate them using a period (`.`) delimiter to form the following v
 
 `eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0=.eyJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNzQzMjM0NTEzfQ==`
 
-![](https://cdn-images-1.medium.com/max/800/1*eacJn-pEQ5FC0qProQv72w.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*eacJn-pEQ5FC0qProQv72w.png)
 
 > THM{Donttakecookiesfromstrangers}
 
@@ -425,7 +425,7 @@ Finally, concatenate them using a period (`.`) delimiter to form the following v
 
 We can see here the login file and know what ip that have unauthorized authentification.
 
-![](https://cdn-images-1.medium.com/max/800/1*tAymkQ0QYo72_oihN3LvBA.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*tAymkQ0QYo72_oihN3LvBA.png)
 
 > 49.99.13.16
 
@@ -439,13 +439,13 @@ The attacker attempts to log in by trying different usernames and passwords repe
 
 **Q1: Explore the website. What is the only host allowed to access the admin area?**
 
-![](https://cdn-images-1.medium.com/max/800/1*uCX-ocRSysev5ywig1bQ_w.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*uCX-ocRSysev5ywig1bQ_w.png)
 
 Let’s try opening the Admin Area from the menu panel.
 
-![](https://cdn-images-1.medium.com/max/800/1*cIvL6CenOGcRsszdRcbRnA.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*cIvL6CenOGcRsszdRcbRnA.png)
 
-![](https://cdn-images-1.medium.com/max/800/1*BdI07pgQN_m0ulSUbgi97g.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*BdI07pgQN_m0ulSUbgi97g.png)
 
 > localhost
 
@@ -453,7 +453,7 @@ Let’s try opening the Admin Area from the menu panel.
 
 Let’s try inspecting the element for the button, and we’ll get the information that it has a parameter pointing to.
 
-![](https://cdn-images-1.medium.com/max/800/1*K0uE_rRLTPUsPaLeu3FTDw.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*K0uE_rRLTPUsPaLeu3FTDw.png)
 
 > secure-file-storage.com
 
@@ -471,7 +471,7 @@ After that, run the modified URL in the browser with the attack box IP:
 
 Then, check the terminal for the listener and capture the flag.
 
-![](https://cdn-images-1.medium.com/max/800/1*akExhJmccLiwC6QBltJjtg.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*akExhJmccLiwC6QBltJjtg.png)
 
 Flag
 

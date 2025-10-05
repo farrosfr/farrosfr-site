@@ -2,7 +2,7 @@
 title: From Corporate Insider to Change Agent (Anti-Usury)
 description: 'Anti-Usury'
 publishDate: 2023-09-16 00:00:01
-tags: ['Usury', 'Data','Business','Work','Fair']
+tags: ['usury','business']
 heroImage: { src: './image.png', color: '#64574D' }
 language: 'en'
 ---

@@ -2,7 +2,7 @@
 title: A Quick Guide to a Multi-Language Astro Site
 publishDate: '2025-08-01'
 description: A step-by-step guide to setting up a basic multi-language (EN/ID) blog in Astro. Essential for improving your site's SEO and accessibility.
-tags: [Astro, Web Development, i18n, SEO, Tutorial]
+tags: [astro, webdev, i18n, seo]
 heroImage: { src: './image.png', color: '#223655' }
 language: 'en'
 ---
@@ -17,15 +17,15 @@ This guide covers the initial setup **without** implementing `translationKey` or
 
 The project uses a directory-based approach to separate content by language.
 
-  * **English (Default):** English articles reside directly within the `src/content/blog/` directory.
+* **English (Default):** English articles reside directly within the `src/content/blog/` directory.
 
-      * Example path: `src/content/blog/my-english-post/index.md`
-      * Resulting URL: `https://your-site.com/blog/my-english-post`
+  * Example path: `src/content/blog/my-english-post/index.md`
+  * Resulting URL: `https://your-site.com/blog/my-english-post`
 
-  * **Indonesian:** All Indonesian articles **must** be placed inside a dedicated `id` subdirectory.
+* **Indonesian:** All Indonesian articles **must** be placed inside a dedicated `id` subdirectory.
 
-      * Example path: `src/content/blog/id/postingan-indonesia-saya/index.md`
-      * Resulting URL: `https://your-site.com/blog/id/postingan-indonesia-saya`
+  * Example path: `src/content/blog/id/postingan-indonesia-saya/index.md`
+  * Resulting URL: `https://your-site.com/blog/id/postingan-indonesia-saya`
 
 -----
 
@@ -58,7 +58,7 @@ export const collections = {
 };
 ```
 
-  * **`language: z.string().optional()`**: This defines a new, optional `language` field for all blog posts. It's marked as optional so that older English posts without this field won't cause build errors.
+* **`language: z.string().optional()`**: This defines a new, optional `language` field for all blog posts. It's marked as optional so that older English posts without this field won't cause build errors.
 
 -----
 

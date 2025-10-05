@@ -2,11 +2,11 @@
 title: 'Introduction to SIEM | TryHackMe Write-Up'
 publishDate: '2025-09-27'
 description: An introduction to Security Information and Event Management.
-tags: [tryhackme, SIEM, writeup]
+tags: [tryhackme, siem, write-up]
 heroImage: {src: './image.png', alt: 'credit: TryHackMe'}
 language: 'en'
 ---
-Here i want to share about my writeup for the room [Introduction to SIEM](https://tryhackme.com/room/logsfundamentals), an introduction to Security Information and Event Management. I wrote this in 2025 and hope it is useful for learning about cybersecurity.
+Here i want to share about my write-up for the room [Introduction to SIEM](https://tryhackme.com/room/logsfundamentals), an introduction to Security Information and Event Management. I wrote this in 2025 and hope it is useful for learning about cybersecurity.
 
 ## Task 1: Introduction
 

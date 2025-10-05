@@ -3,7 +3,7 @@ title: A Practical Guide to Understanding and Mitigating SQLi
 publishDate: '2025-01-02T02:48:26.443Z'
 description: >-
   A Practical Guide to Understanding and Mitigating SQL Injection Risks.
-tags: [SQLi, Cybersecurity, Web Security, Vulnerability, PHP]
+tags: [sqli, php]
 heroImage: { src: './image.png', color: '#223655' }
 language: 'en'
 ---
@@ -18,12 +18,14 @@ SQL Injection (SQLi) is a critical web security vulnerability that allows attack
 SQL Injection exploits the way SQL queries are constructed. When user inputs are concatenated directly into a query without proper validation, attackers can inject malicious SQL code. For example:
 
 ## Vulnerable Code Example (PHP)
+
 ```sql
 $username = $POST['username'];  
 $password = $POST['password'];  
 $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";  
 $result = mysqliquery($connection, $query);
 ```
+
 If an attacker inputs:
 
 ```sql
@@ -44,13 +46,13 @@ Here, ‘1’=’1' always evaluates to true, bypassing authentication.
 
 ## Types of SQL Injection Attacks
 
-1. Classic SQL Injection:
+### 1. Classic SQL Injection
 
 - Directly injects malicious SQL commands into user input fields.
 
 - Example payload: ‘ OR ‘1’=’1'; —
 
-2. Union-Based SQL Injection:
+### 2. Union-Based SQL Injection
 
 - Exploits the UNION operator to extract data from other tables.
 
@@ -58,7 +60,7 @@ Here, ‘1’=’1' always evaluates to true, bypassing authentication.
 
 ' UNION SELECT username, password FROM adminusers;--
 
-3. Boolean-Based Blind SQL Injection:
+### 3. Boolean-Based Blind SQL Injection
 
 - Uses true/false conditions to infer information.
 
@@ -67,7 +69,7 @@ Here, ‘1’=’1' always evaluates to true, bypassing authentication.
 `' AND 1=1;-- (true)`  
      `' AND 1=2;-- (false)`
 
-4. Time-Based Blind SQL Injection:
+### 4. Time-Based Blind SQL Injection
 
 - Exploits database functions that cause delays to infer data.
 
@@ -75,7 +77,7 @@ Here, ‘1’=’1' always evaluates to true, bypassing authentication.
 
 `' OR IF(1=1, SLEEP(5), 0);--`
 
-5. Error-Based SQL Injection:
+### 5. Error-Based SQL Injection
 
 - Leverages database error messages to gather information.
 
@@ -106,11 +108,13 @@ Here, ‘1’=’1' always evaluates to true, bypassing authentication.
 Parameterized queries separate data from code, ensuring user inputs are treated as literals rather than executable commands.
 
 Safe Code Example (PHP):
+
 ```sql
 $stmt = $connection->prepare("SELECT * FROM users WHERE username = ? AND password = ?");  
 $stmt->bindparam("ss", $username, $password);  
 $stmt->execute();
 ```
+
 This approach prevents attackers from altering the query structure.
 
 ### 2. Input Validation and Sanitization
@@ -132,12 +136,14 @@ $username = mysqlirealescapestring($connection, $POST['username']);
 Stored procedures execute predefined SQL code on the server side, reducing the risk of injection if properly implemented.
 
 Example (MySQL):
+
 ```sql
 CREATE PROCEDURE GetUser(IN username VARCHAR(50), IN password VARCHAR(50))  
 BEGIN  
     SELECT * FROM users WHERE username = username AND password = password;  
 END;
 ```
+
 ### 5. Least Privilege Principle
 
 Restrict database user permissions to only what is necessary for the application. For example:
@@ -158,37 +164,43 @@ Regularly perform penetration testing and use automated tools to identify vulner
 
 ### Query Parameterization in Different Languages
 
-*   PHP:
+- PHP:
+
 ```php
 $stmt = $dbh->prepare("SELECT * FROM users WHERE id = ?");
 ```
-*   Python:
+
+- Python:
+
 ```python
 cursor.execute("SELECT * FROM users WHERE id = %s", (userid,))
 ```
-*   Java:
+
+- Java:
+
 ```js
 PreparedStatement ps = conn.prepareStatement("SELECT * FROM users WHERE id = ?");
 ```
+
 ### Escaping User Inputs for Specific Databases
 
-*   MySQL: Use mysqlrealescapestring() to escape special characters in input strings.
-*   PostgreSQL: Use pgescapestring() to properly handle input.
-*   SQLite: Use sqliteescapestring() for input sanitization.
+- MySQL: Use mysqlrealescapestring() to escape special characters in input strings.
+- PostgreSQL: Use pgescapestring() to properly handle input.
+- SQLite: Use sqliteescapestring() for input sanitization.
 
 * * *
 
 ## Common Mistakes in Mitigation
 
-1. Relying on Client-Side Validation:
+### 1. Relying on Client-Side Validation
 
 - Attackers can bypass client-side checks using tools like Burp Suite or directly modifying HTTP requests.
 
-2. Using Blacklists for Input Validation:
+### 2. Using Blacklists for Input Validation
 
 - Blacklists are incomplete and can be bypassed with creative payloads.
 
-3. Improperly Written Stored Procedures:
+### 3. Improperly Written Stored Procedures
 
 - Stored procedures must also validate inputs; otherwise, they remain vulnerable.
 
@@ -201,6 +213,7 @@ Here is a safe way to implement and run code using prepared statements with MySQ
 ### 1. HTML Form and PHP Code (Single File)
 
 Save this code in a file, e.g., login.php:
+
 ```php
 <?php  
 // Handle form submission  
@@ -254,9 +267,11 @@ if ($SERVER['REQUESTMETHOD'] === 'POST') {
 </body>  
 </html>
 ```
+
 ### 2. Instructions to Simulate the Web Application
 
-1. Create a Database and Table: Run this SQL to create a database and a table for testing:
+### 1. Create a Database and Table: Run this SQL to create a database and a table for testing
+
 ``` sql
 CREATE DATABASE testdb;  
 USE testdb;  
@@ -269,20 +284,25 @@ CREATE TABLE users (
   
 INSERT INTO users (username, password) VALUES ('testuser', 'testpassword');
 ```
-2. Replace Database Credentials: Update the mysqli connection code in the PHP script:
+
+### 2. Replace Database Credentials: Update the mysqli connection code in the PHP script
+
 ``` sql
 $connection = new mysqli('localhost', 'root', 'your password', 'testdb');
 ```
-3. Run a Local PHP Server: Save the file as login.php and start a PHP server in the directory where it is saved:
+
+### 3. Run a Local PHP Server: Save the file as login.php and start a PHP server in the directory where it is saved
+
 ``` bash
 php -S localhost:8000
 ```
-4. Access the Application in a Browser: Open a browser and go to [http://localhost:8000/login.php.](http://localhost:8000/login.php.)
 
-5. Test the Login:
+### 4. Access the Application in a Browser: Open a browser and go to [http://localhost:8000/login.php.](http://localhost:8000/login.php.)
 
-*   Enter the username testuser and password testpassword to log in successfully.
-*   Try invalid credentials to see the error message.
+### 5. Test the Login
+
+- Enter the username testuser and password testpassword to log in successfully.
+- Try invalid credentials to see the error message.
 
 ## Conclusion
 

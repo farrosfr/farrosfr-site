@@ -3,7 +3,7 @@ title: 'OpenAI JavaScript API: Building a Recipe Blog'
 publishDate: '2024-08-30T09:12:07.391Z'
 description: >-
   OpenAI JavaScript API: Building a Recipe Blog.
-tags: [OpenAI, JavaScript, API, Generative AI, Web Development]
+tags: [ai, javascript, api, webdev]
 heroImage: {src: './image.png',color: '#211e2f'}
 language: 'en'
 ---
@@ -36,14 +36,14 @@ const userProfile = {
 
 This object includes:
 
-*   `dietaryRestrictions` set to `'halal'`
-*   `cuisinePreferences` set to `'Indonesian, Sundanese, Javanese'`
-*   `ingredientsAvailable` set to `'tempeh, tofu, coconut milk, chili, lemongrass'`
+* `dietaryRestrictions` set to `'halal'`
+* `cuisinePreferences` set to `'Indonesian, Sundanese, Javanese'`
+* `ingredientsAvailable` set to `'tempeh, tofu, coconut milk, chili, lemongrass'`
 
 Create an object called `systemPrompt` with the specified instructions for the AI, use the following syntax:
 
-const systemPrompt = {   
-  role: 'system',   
+const systemPrompt = {
+  role: 'system',
   content: 'Generate an HTML code for a recipe blog that considers dietary restrictions, cuisine type, and ingredients.'  
 };
 
@@ -70,10 +70,10 @@ This object includes the `role` key with the value `"user"` and the `content` ke
 
 To initiate a chat completion using the `client` variable, follow these steps:
 
-1.  Use the `client.chat.completions.create` method.
-2.  Pass the `model` argument with the value `"gpt-4o-mini"` or `"gpt-4o"`.
-3.  Pass the `messages` argument with an array containing `systemPrompt` and `userPrompt`.
-4.  Assign the return value to a variable called `response`.
+1. Use the `client.chat.completions.create` method.
+2. Pass the `model` argument with the value `"gpt-4o-mini"` or `"gpt-4o"`.
+3. Pass the `messages` argument with an array containing `systemPrompt` and `userPrompt`.
+4. Assign the return value to a variable called `response`.
 
 Here’s the code:
 
@@ -89,6 +89,7 @@ console.log(response.choices[0].message.content);
 This will print the content of the AI’s reply to the terminal. Make sure to place this line after the `response` variable has been assigned.
 
 The result of this process should be HTML code that is prepared for review and can then be published on the website. Here is an example of the response result:
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -149,11 +150,12 @@ The result of this process should be HTML code that is prepared for review and c
 </body>
 </html>
 ```
+
 To view the output of an HTML script, you can create an HTML file on your local computer and then open it in a browser or you can also use an online site to view the HTML results, such as [https://html.onlineviewer.net](https://html.onlineviewer.net)
 
 Here is a visual display of the HTML:
 
-![](https://cdn-images-1.medium.com/max/800/1*q2wPNMAvcpgH8_AjWjfL1Q.png)
+![alt text](https://cdn-images-1.medium.com/max/800/1*q2wPNMAvcpgH8_AjWjfL1Q.png)
 
 This tutorial showcases how to leverage the OpenAI JavaScript API to create a tailored recipe blog generator. By integrating dietary preferences, available ingredients, and specific cuisine choices into the model’s prompts, you can generate customized, blog-ready recipes with minimal effort. Through this project, we’ve demonstrated the power of prompt engineering and API interaction to build dynamic content that meets users’ needs, offering a scalable solution for personalized recipe creation on your blog.
 

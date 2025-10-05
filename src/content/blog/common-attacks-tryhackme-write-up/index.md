@@ -3,11 +3,11 @@ title: Common Attacks | TryHackMe Write-Up
 publishDate: '2025-09-14'
 description: >-
   With practical exercises see how common attacks occur, and improve your cyber hygiene to stay safer online.
-tags: [tryhackme, common attacks, writeup]
+tags: [tryhackme, common-attacks, write-up]
 heroImage: {src: './image.png', alt: 'TryHackMe'}
 language: 'en'
 ---
-Here i want to share about my writeup for the room [Common Attacks](https://tryhackme.com/room/commonattacks), with practical exercises see how common attacks occur, and improve your cyber hygiene to stay safer online. I wrote this in 2025 and hope it is useful for learning about cybersecurity.
+Here i want to share about my write-up for the room [Common Attacks](https://tryhackme.com/room/commonattacks), with practical exercises see how common attacks occur, and improve your cyber hygiene to stay safer online. I wrote this in 2025 and hope it is useful for learning about cybersecurity.
 
 ## Task 1: Introduction
 

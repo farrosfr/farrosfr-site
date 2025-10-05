@@ -3,7 +3,7 @@ title: "Add Google Analytics to Astro: The Complete Guide"
 publishDate: '2025-08-18'
 description: >-
    A complete guide to integrating Google Analytics in Astro using best practices: layouts, environment variables, and handling View Transitions for good tracking.
-tags: [Astro, Google Analytics, WebDev, Tutorial]
+tags: [astro, Wwbdev]
 heroImage: { src: './image copy.png', color: '#f9ab00' }
 language: 'en'
 ---
@@ -18,9 +18,9 @@ Here, we'll discuss how to leverage Astro's features: **centralized layouts**, *
 
 Before proceeding, ensure you have the following:
 
-1.  An existing Astro project.
-2.  A Google Analytics (GA4) account.
-3.  Your **Measurement ID** (typically in the `G-XXXXXXXXXX` format).
+1. An existing Astro project.
+2. A Google Analytics (GA4) account.
+3. Your **Measurement ID** (typically in the `G-XXXXXXXXXX` format).
 
 -----
 
@@ -28,9 +28,9 @@ Before proceeding, ensure you have the following:
 
 Hardcoding sensitive keys or IDs directly into your source code is poor practice. Instead, we'll use environment variables.
 
-1.  Create a new file in your project's root directory (at the same level as `package.json`) and name it `.env`.
+1. Create a new file in your project's root directory (at the same level as `package.json`) and name it `.env`.
 
-2.  Add your Measurement ID to this file in the following format:
+2. Add your Measurement ID to this file in the following format:
 
     ```ini
     # .env
@@ -39,7 +39,7 @@ Hardcoding sensitive keys or IDs directly into your source code is poor practice
 
     Replace `G-XXXXXXXXXX` with your actual ID. The `PUBLIC_` prefix is a specific Astro instruction that makes the variable accessible on the client-side (in the browser).
 
-3.  Remember to add `.env` to your `.gitignore` file to prevent it from being committed to your Git repository.
+3. Remember to add `.env` to your `.gitignore` file to prevent it from being committed to your Git repository.
 
 ![alt text](image.png)
 
@@ -114,9 +114,9 @@ Open your `BaseLayout.astro` file and add the following code block inside the `<
 
 **Code Explanation:**
 
-  - `import.meta.env.PROD && (...)`: Ensures the script only runs when the project is built for production, not during local development.
-  - `import.meta.env.PUBLIC_GA_ID`: Retrieves the ID from the `.env` file we created earlier.
-  - `is:inline`: An essential Astro attribute that prevents Astro from processing the script, injecting it directly into the final HTML.
+- `import.meta.env.PROD && (...)`: Ensures the script only runs when the project is built for production, not during local development.
+- `import.meta.env.PUBLIC_GA_ID`: Retrieves the ID from the `.env` file we created earlier.
+- `is:inline`: An essential Astro attribute that prevents Astro from processing the script, injecting it directly into the final HTML.
 
 ![alt text](image-2.png)
 
@@ -153,11 +153,11 @@ This script manually sends a `page_view` event to Google Analytics every time an
 
 Since `.env` is not committed, how does the live server know your Analytics ID? You need to add it to your hosting platform's settings. Here’s how to do it on Netlify:
 
-1.  Log in to your Netlify dashboard.
-2.  Select your site, then navigate to **Site configuration > Build & deploy > Environment variables**.
-3.  Click **"Add a variable"**.
-4.  Fill in the *Key* as `PUBLIC_GA_ID` and the *Value* with `G-XXXXXXXXXX`.
-5.  Save and trigger a new deploy to apply the changes.
+1. Log in to your Netlify dashboard.
+2. Select your site, then navigate to **Site configuration > Build & deploy > Environment variables**.
+3. Click **"Add a variable"**.
+4. Fill in the *Key* as `PUBLIC_GA_ID` and the *Value* with `G-XXXXXXXXXX`.
+5. Save and trigger a new deploy to apply the changes.
 
 ![alt text](image-4.png)
 
@@ -169,9 +169,9 @@ After deploying your site, don't panic if the standard reports in Google Analyti
 
 Use the **Realtime** report for instant verification:
 
-1.  Open Google Analytics > **Reports > Realtime**.
-2.  Open your live site in another browser tab and navigate through a few pages.
-3.  You should see your activity appear in the Realtime report within seconds. If so, congratulations, your installation is successful!
+1. Open Google Analytics > **Reports > Realtime**.
+2. Open your live site in another browser tab and navigate through a few pages.
+3. You should see your activity appear in the Realtime report within seconds. If so, congratulations, your installation is successful!
 
 ![alt text](image-5.png)
 
@@ -184,4 +184,5 @@ By following these steps, you have successfully integrated Google Analytics into
 > Alhamdulilah. Hope it useful!
 
 ## Image Source
+
 [developer.google.com](https://developers.google.com/analytics/images/landing-page/Rectangular-16x9/E02877824-GMP-Google-Analytics-Help-Center-Assets-Apr23-Graphic-1.1@300x.svg)

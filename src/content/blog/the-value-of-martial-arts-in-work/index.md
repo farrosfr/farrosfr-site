@@ -3,7 +3,7 @@ title: The Value of Martial Arts in Work
 publishDate: '2023-09-26T07:08:25.355Z'
 description: >-
   The Value of Martial Arts in Work.
-tags: [Martial Arts, Work, Health, Mental, Honesty]
+tags: [martial-arts]
 heroImage: {src: './image.png', color: '#627e8d'}
 language: 'en'
 ---

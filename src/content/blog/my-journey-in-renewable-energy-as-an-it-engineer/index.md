@@ -3,7 +3,7 @@ title: 'My Journey in Renewable Energy as an IT Engineer'
 publishDate: '2025-04-10T07:28:08.983Z'
 description: >-
   Empowering Growth with SonusHUB: My Journey in Renewable Energy as an IT Engineer.
-tags: [Renewable Energy, IT, Career, Indonesia, E-commerce]
+tags: [e-commerce]
 heroImage: {src: './image.png',color: '#ffffff'}
 language: 'en'
 ---
@@ -15,4 +15,4 @@ Some things I want to share are the values I’ve gained from working at this co
 
 It has forced me to grow as well, because renewable energy is something I believe in and consider a blessing. We utilize green energy, which is unlimited, like solar panels. We know that solar panels are still a great option, but there are some issues, such as inverter problems, hot spots, PID, weather damage, and dirt accumulation. These issues highlight the need for regular maintenance to ensure optimal performance.
 
-I think that’s enough for this story; maybe I will continue it later. Thank you for reading, and I’m very open to discussion about renewable energy. For more details or to contact me, you can reach me via my company email: farros.alfatih@solar-nusantara.id.
+I think that’s enough for this story; maybe I will continue it later. Thank you for reading, and I’m very open to discussion about renewable energy. For more details or to contact me, you can reach me via my company email: <farros.alfatih@solar-nusantara.id>.

@@ -5,7 +5,7 @@ heroImageCredit: "AltumCode"
 heroImageCreditLink: "https://unsplash.com/@altumcode"
 description: "Reflecting on my Astro site's journey: from SSG's initial appeal to facing scalability challenges, prompting a shift towards Server-Side Rendering (SSR)."
 publishDate: "2025-08-17"
-tags: ["astro", "ssg", "ssr", "headless-cms", "webdev"]
+tags: ["astro", "webdev"]
 language: "en"
 ---
 
@@ -14,12 +14,13 @@ language: "en"
 When I first built this site, Astro felt like the answer. As a developer, the concept of Static Site Generation (SSG) was a luxury. Amazing build speeds, fast site performance due to generating static HTML without JavaScript (by default), and a smooth developer experience (DX).
 
 Managing content via Markdown files within `src/content/` was straightforward. Each article was a neat, structured `.md` file, all under Git version control. For a portfolio or personal blog with a few articles, this workflow was great:
-1.  Write a new article in the code editor.
-2.  `git add .`
-3.  `git commit -m "feat: add new blog post"`
-4.  `git push`
-5.  Wait a few minutes for Netlify to finish building.
-6.  The new article goes live.
+
+1. Write a new article in the code editor.
+2. `git add .`
+3. `git commit -m "feat: add new blog post"`
+4. `git push`
+5. Wait a few minutes for Netlify to finish building.
+6. The new article goes live.
 
 Simple, efficient, and very satisfying.
 
@@ -47,13 +48,14 @@ Astro, with its flexibility, already had an answer for this. Besides the `'stati
 
 By switching the `output` in `astro.config.ts` to `'server'` and using an adapter like `@astrojs/netlify`, my site's architecture fundamentally changed:
 
-1.  **No more per-content builds:** The site is no longer generated into thousands of HTML files during the build. Instead, Netlify deploys a serverless function.
-2.  **Render on Demand:** When a user visits `/blog/new-article`, this function runs. It will contact the Headless CMS, fetch the data for `new-article`, render it into HTML on the fly, and send it to the user.
+1. **No more per-content builds:** The site is no longer generated into thousands of HTML files during the build. Instead, Netlify deploys a serverless function.
+2. **Render on Demand:** When a user visits `/blog/new-article`, this function runs. It will contact the Headless CMS, fetch the data for `new-article`, render it into HTML on the fly, and send it to the user.
 
 The publishing workflow can also be changed to:
-1.  Write and edit articles in the Headless CMS web interface.
-2.  Press the **"Publish"** button.
-3.  **Done.** The article goes live instantly. No `git push`, no waiting for builds.
+
+1. Write and edit articles in the Headless CMS web interface.
+2. Press the **"Publish"** button.
+3. **Done.** The article goes live instantly. No `git push`, no waiting for builds.
 
 ## Conclusion: Astro Remains Great, with the Right Configuration
 

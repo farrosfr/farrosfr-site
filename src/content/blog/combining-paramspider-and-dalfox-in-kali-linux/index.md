@@ -3,7 +3,7 @@ title: Combining ParamSpider and Dalfox in Kali Linux
 publishDate: '2024-07-01T03:40:19.201Z'
 description: >-
   Combining ParamSpider and Dalfox in Kali Linux for Enhanced Security Testing.
-tags: [Kali Linux, Cybersecurity, Ethical Hacking, Paramspider, Dalfox]
+tags: [paramspider, dalfox]
 heroImage: { src: './image.png', color: '#2e73a8' }
 language: 'en'
 ---
@@ -43,7 +43,7 @@ This command instructs ParamSpider to crawl the specified domain and list out UR
 
 Now, turn your attention to Dalfox. Begin by cloning the Dalfox repository and installing it using Go:
 
-git clone https://github.com/hahwul/dalfox  
+git clone <https://github.com/hahwul/dalfox>  
 go install github.com/hahwul/dalfox/v2@latest
 
 After the installation, move the Dalfox executable to a location in your system’s PATH to make it accessible system-wide:

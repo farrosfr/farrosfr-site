@@ -4,7 +4,7 @@ title: 'Enhancing Protection with Input Validation and
 publishDate: '2024-07-05T09:37:25.693Z'
 description: >-
   JSO Vulnerabilities: Enhancing Protection with Input Validation and Sanitization.
-tags: [XSS, Cybersecurity, Web Security, Input Validation, Flask]
+tags: [xss, flask]
 heroImage: {src: './image.png',color: '#56c152'}
 language: 'en'
 ---
@@ -18,7 +18,6 @@ Contributors on a website typically have the ability to create their own account
 ## JavaScript Object (JSO)
 
 JSO refers to a method where JavaScript is used to create complex interactions on web pages. It can be manipulated to execute unauthorized actions within a web application. An example of a JSO injection is shown below:
-
 
 Here, an external JavaScript file is loaded into the web application, potentially leading to malicious activities.
 
@@ -44,7 +43,7 @@ One practical example involves a simple web application created with Flask, a Py
 
 from flask import Flask, request, escape  
 
-``` js 
+``` js
 app = Flask(name)  
   
 @app.route('/submitcomment', methods=['POST'])  

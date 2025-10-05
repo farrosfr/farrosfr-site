@@ -3,7 +3,7 @@ title: 'Build a Pro Docs Site Fast with MkDocs'
 publishDate: '2025-08-11'
 description: >-
    Learn how to use MkDocs, a Static Site Generator, to build a clean, modern, and functional documentation website in minutes.
-tags: [MkDocs, Static Site Generator, Documentation, Python, Web Development]
+tags: [mkdocs, python, webdev]
 heroImage: {src: './image-1.png'}
 language: 'en'
 ---
@@ -22,10 +22,10 @@ MkDocs is a Static Site Generator (SSG). With it, we can transform Markdown (`.m
 
 ### **Why MkDocs?**
 
-  * **Focus on Content:** Concentrate on writing content in Markdown, without worrying about complex HTML.
-  * **Automatic Navigation:** It creates a navigation menu based on your file and folder structure.
-  * **Fast & Lightweight:** The resulting website is static, which makes it very fast.
-  * **Customizable:** Many themes and plugins are available. One of the most popular is Material for MkDocs, which includes features like search, dark mode, and a modern design.
+* **Focus on Content:** Concentrate on writing content in Markdown, without worrying about complex HTML.
+* **Automatic Navigation:** It creates a navigation menu based on your file and folder structure.
+* **Fast & Lightweight:** The resulting website is static, which makes it very fast.
+* **Customizable:** Many themes and plugins are available. One of the most popular is Material for MkDocs, which includes features like search, dark mode, and a modern design.
 
 ## **How to Create the Website**
 
@@ -48,15 +48,15 @@ cd web-documentation
 
 This command will create a `web-documentation` folder with the following structure:
 
-```
+```bash
 .
 ├── docs/
 │   └── index.md
 └── mkdocs.yml
 ```
 
-  * **`docs/`**: The folder where all your Markdown content files will be stored.
-  * **`mkdocs.yml`**: The main configuration file for your website.
+* **`docs/`**: The folder where all your Markdown content files will be stored.
+* **`mkdocs.yml`**: The main configuration file for your website.
 
 ### **Project Configuration (`mkdocs.yml`)**
 

@@ -2,11 +2,11 @@
 title: 'SQLMap: The Basics | TryHackMe Write-Up'
 publishDate: '2025-09-16'
 description: Learn about SQL injection and exploit this vulnerability through the SQLMap tool.
-tags: [tryhackme, SQLmap, writeup]
+tags: [tryhackme, SQLmap, write-up]
 heroImage: {src: './image.png', alt: 'TryHackMe'}
 language: 'en'
 ---
-Here i want to share about my writeup for the room [Shells Overview](https://tryhackme.com/room/shellsoverview), learn about the different types of shells. I wrote this in 2025 and hope it is useful for learning about cybersecurity.
+Here i want to share about my write-up for the room [Shells Overview](https://tryhackme.com/room/shellsoverview), learn about the different types of shells. I wrote this in 2025 and hope it is useful for learning about cybersecurity.
 
 ## Task 1: Introduction
 

@@ -2,11 +2,11 @@
 title: 'IDS Fundamentals | TryHackMe Write-Up'
 publishDate: '2025-10-02'
 description: Learn the fundamentals of IDS, along with the experience of working with Snort.
-tags: [tryhackme, IDS, writeup]
+tags: [tryhackme, ids, write-up]
 heroImage: {src: './image.png', alt: 'credit: TryHackMe'}
 language: 'en'
 ---
-Here i want to share about my writeup for the room [IDS Fundamentals](https://tryhackme.com/room/idsfundamentals) (Premium Room), learn the fundamentals of IDS, along with the experience of working with Snort. I wrote this in 2025 and hope it is useful for learning about cybersecurity.
+Here i want to share about my write-up for the room [IDS Fundamentals](https://tryhackme.com/room/idsfundamentals) (Premium Room), learn the fundamentals of IDS, along with the experience of working with Snort. I wrote this in 2025 and hope it is useful for learning about cybersecurity.
 
 ## Task 1: What Is an IDS
 
