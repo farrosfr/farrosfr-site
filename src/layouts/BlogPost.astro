@@ -16,16 +16,14 @@ interface Props {
   headings: MarkdownHeading[]
   remarkPluginFrontmatter: Record<string, unknown>
   // Tambahkan baris ini untuk mendefinisikan prop baru
-  language?: string
+  // language?: string
 }
 
 const {
   post: { id, data },
   posts,
   headings,
-  remarkPluginFrontmatter,
-  // Ambil prop 'language' yang sudah kita definisikan
-  language,
+  remarkPluginFrontmatter
 } = Astro.props
 
 const {
@@ -51,7 +49,6 @@ const primaryColor = data.heroImage?.color ?? 'hsl(var(--primary) / var(--un-tex
   meta={{ articleDate, description, ogImage: socialImage, title }}
   highlightColor={primaryColor}
   back='/blog'
-  language={language}
 >
   {!!headings.length && <TOC {headings} slot='sidebar' />}
 

@@ -21,11 +21,8 @@ type Props = {
 
 const { post, posts } = Astro.props
 const { Content, headings, remarkPluginFrontmatter } = await render(post)
-
-// 1. Ambil properti 'language' dari data post
-const { language } = post.data
 ---
 
-<PostLayout {post} {posts} {headings} {remarkPluginFrontmatter} language={language}>
+<PostLayout {post} {posts} {headings} {remarkPluginFrontmatter}
   <Content />
 </PostLayout>
