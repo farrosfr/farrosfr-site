@@ -34,16 +34,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
       <div class='flex flex-col items-center gap-y-4'>
         <h1 class='text-3xl font-bold'>{config.author}</h1>
         <div class='flex flex-wrap justify-center gap-x-7 gap-y-3'>
-          <Label 
-            title='LinkedIn' 
-            as='a' 
-            href='https://www.linkedin.com/in/username-linkedin-anda' 
-            target='_blank' 
-            rel='noopener noreferrer'
-          >
-            <Icon name='link' class='size-5' slot='icon' />
-          </Label>
-
+          
           <Label
             title='hello@farrosfr.com'
             as='a'
@@ -87,75 +78,44 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
           date='Aug 2015 - Sep 2019'
           href='https://www.neliti.com/publications/323506/topic-discovery-pada-dokumen-abstrak-jurnal-penelitian-di-science-direct-menggun'
         />
-        <Card
-          as='a'
-          heading='Internet of Things Bootcamp'
-          subheading='Digital Talent Schoolarship Kominfo'
-          date='Jun - Aug 2019'
-          href='https://drive.google.com/file/d/11KEiT6UmrAZd1SQkL3ePOyR_4T0An4vz/view'
-          target='_blank'
-        />
-        <Card
-          heading='Enterprise Full-Stack Developer Bootcamp'
-          subheading='Praxis Academy'
-          date='Oct 2019'
-        />
-        <Card
-          as='a'
-          heading='Data Engineering Bootcamp'
-          subheading='Multipolar Technology'
-          date='Oct - Nov 2019'
-          href='https://drive.google.com/file/d/1-tJgXTy3M-zeZoFtbZ98pEhDWkKs9PEA/view'
-          target='_blank'
-        />
       </Section>
 
       <Section title='Website List'>
         <div class='grid grid-cols-1 gap-3 sm:grid-cols-2'>
           <ProjectCard
+            href='https://aesi.or.id'
+            heading='Asosisi Energi Surya Indonesia'
+            subheading=' '
+            imagePath='/src/assets/projects/aesi1.png'
+          />
+          <ProjectCard
             href='https://aurora-nutrima.id'
             heading='Aurora Nutrima Boga'
             subheading=' '
-            imagePath='/src/assets/projects/alex-tyson-2BAXJ7ha74s-unsplash.jpg'
+            imagePath='/src/assets/projects/aurora.png'
           />
           <ProjectCard
             href='https://profile.sonushub.id'
             heading='SonusHUB Profile'
             subheading=' '
-            imagePath='/src/assets/projects/angelica-teran-Bk9hpaXHK4o-unsplash.jpg'
+            imagePath='/src/assets/projects/sonushub.png'
           />
           <ProjectCard
             href='https://kidiko.id'
             heading='Kidiko ID'
             subheading=' '
-            imagePath='/src/assets/projects/kseniia-zapiatkina-yATU3rg8tNI-unsplash.jpg'
+            imagePath='/src/assets/projects/kidiko.png'
           />
-          <ProjectCard
+          <!-- <ProjectCard
             href='/projects'
             heading='More projects'
             subheading='Check out more projects'
             imagePath='/src/assets/projects/wen-qiao-g_w8I64FiO0-unsplash.jpg'
-          />
+          /> -->
         </div>
       </Section>
 
       <Section title='Certifications'>
-        <Card
-          as='a'
-          heading='Azure Fundamental (AZ-900)'
-          subheading='Microsoft'
-          date='Jan 2022'
-          href='https://learn.microsoft.com/id-id/users/farrosfr/credentials/a05b92e878c7edd9?ref=https%3A%2F%2Fwww.linkedin.com%2F'
-          target='_blank'
-        />
-        <Card
-          as='a'
-          heading='Responsive Web Design'
-          subheading='freeCodeCamp'
-          date='Mar 2024'
-          href='https://www.freecodecamp.org/certification/farrosfr/responsive-web-design'
-          target='_blank'
-        />
         <Card
           as='a'
           heading='Introduction to Information Security'
@@ -194,6 +154,14 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
           subheading='TryHackMe'
           date='Feb 2025'
           href='https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-QRGNXAUUOF.pdf'
+          target='_blank'
+        />
+        <Card
+          as='a'
+          heading='Cyber Security 101 Certificate'
+          subheading='TryHackMe'
+          date='Feb 2025'
+          href='https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-USGATTGRLI.pdf'
           target='_blank'
         />
       </Section>

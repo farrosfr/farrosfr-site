@@ -1,6 +1,6 @@
 ---
 title: 'Security Principles | TryHackMe Write-Up'
-publishDate: '2025-10-02'
+publishDate: '2025-10-06'
 description: Learn about the security triad and common security models and principles.
 tags: [tryhackme, write-up]
 heroImage: {src: './image.png', alt: 'credit: TryHackMe'}

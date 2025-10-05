@@ -1,6 +1,6 @@
 ---
 title: 'FlareVM: Arsenal of Tools | TryHackMe Write-Up'
-publishDate: '2025-10-02'
+publishDate: '2025-10-06'
 description: Learn the arsenal of investigative tools in FlareVM.
 tags: [tryhackme, flarevm, write-up]
 heroImage: {src: './image.png', alt: 'credit: TryHackMe'}

@@ -1,6 +1,6 @@
 ---
 title: 'REMnux: Getting Started | TryHackMe Write-Up'
-publishDate: '2025-10-02'
+publishDate: '2025-10-06'
 description: Learn how you can use the tools inside the REMnux VM.
 tags: [tryhackme, remnux, write-up]
 heroImage: {src: './image.png', alt: 'credit: TryHackMe'}

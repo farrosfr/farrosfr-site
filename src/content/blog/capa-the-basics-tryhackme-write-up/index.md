@@ -1,6 +1,6 @@
 ---
 title: 'CAPA: The Basics | TryHackMe Write-Up'
-publishDate: '2025-10-02'
+publishDate: '2025-10-06'
 description: Learn to use CAPA to identify malicious capabilities.
 tags: [tryhackme, capa, write-up]
 heroImage: {src: './image.png', alt: 'credit: TryHackMe'}
