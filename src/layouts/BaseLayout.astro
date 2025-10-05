@@ -12,16 +12,21 @@ import '@/assets/styles/app.css'
 interface Props {
   meta: SiteMeta
   highlightColor?: string
+  language?: string // Prop untuk bahasa
 }
 
 const {
   meta: { articleDate, description = config.description, ogImage, title },
   highlightColor,
+  // 2. Ambil 'language'. Jika tidak ada, pakai default dari config
+  language = config.locale.lang,
   ...props
 } = Astro.props
 
+//3. Gunakan variabel 'language' yang dinamis, BUKAN dari config lagi
+//<html lang={config.locale.lang}>
 ---
-<html lang={config.locale.lang}>
+<html lang={language}>
   <head>
     <BaseHead {articleDate} {description} {ogImage} {title} />
     <ThemeProvider />
